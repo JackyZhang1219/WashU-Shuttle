@@ -15,3 +15,7 @@ struct WashU_ShuttleApp: App {
         }
     }
 }
+
+func firebase(){
+    
+}
