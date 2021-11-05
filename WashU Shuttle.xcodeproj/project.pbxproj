@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		497901362734C13D00F2CA82 /* WashU_ShuttleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */; };
+		497901382734C13D00F2CA82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901372734C13D00F2CA82 /* ContentView.swift */; };
+		4979013A2734C13F00F2CA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497901392734C13F00F2CA82 /* Assets.xcassets */; };
+		4979013D2734C13F00F2CA82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4979013C2734C13F00F2CA82 /* Preview Assets.xcassets */; };
+		497901472734C13F00F2CA82 /* WashU_ShuttleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901462734C13F00F2CA82 /* WashU_ShuttleTests.swift */; };
+		497901512734C13F00F2CA82 /* WashU_ShuttleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */; };
+		497901532734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		497901432734C13F00F2CA82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4979012A2734C13D00F2CA82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 497901312734C13D00F2CA82;
+			remoteInfo = "WashU Shuttle";
+		};
+		4979014D2734C13F00F2CA82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4979012A2734C13D00F2CA82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 497901312734C13D00F2CA82;
+			remoteInfo = "WashU Shuttle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		497901322734C13D00F2CA82 /* WashU Shuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WashU Shuttle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleApp.swift; sourceTree = "<group>"; };
+		497901372734C13D00F2CA82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		497901392734C13F00F2CA82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4979013C2734C13F00F2CA82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		497901422734C13F00F2CA82 /* WashU ShuttleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WashU ShuttleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		497901462734C13F00F2CA82 /* WashU_ShuttleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleTests.swift; sourceTree = "<group>"; };
+		4979014C2734C13F00F2CA82 /* WashU ShuttleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WashU ShuttleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITests.swift; sourceTree = "<group>"; };
+		497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4979012F2734C13D00F2CA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4979013F2734C13F00F2CA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497901492734C13F00F2CA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		497901292734C13D00F2CA82 = {
+			isa = PBXGroup;
+			children = (
+				497901342734C13D00F2CA82 /* WashU Shuttle */,
+				497901452734C13F00F2CA82 /* WashU ShuttleTests */,
+				4979014F2734C13F00F2CA82 /* WashU ShuttleUITests */,
+				497901332734C13D00F2CA82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		497901332734C13D00F2CA82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				497901322734C13D00F2CA82 /* WashU Shuttle.app */,
+				497901422734C13F00F2CA82 /* WashU ShuttleTests.xctest */,
+				4979014C2734C13F00F2CA82 /* WashU ShuttleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		497901342734C13D00F2CA82 /* WashU Shuttle */ = {
+			isa = PBXGroup;
+			children = (
+				497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */,
+				497901372734C13D00F2CA82 /* ContentView.swift */,
+				497901392734C13F00F2CA82 /* Assets.xcassets */,
+				4979013B2734C13F00F2CA82 /* Preview Content */,
+			);
+			path = "WashU Shuttle";
+			sourceTree = "<group>";
+		};
+		4979013B2734C13F00F2CA82 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4979013C2734C13F00F2CA82 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		497901452734C13F00F2CA82 /* WashU ShuttleTests */ = {
+			isa = PBXGroup;
+			children = (
+				497901462734C13F00F2CA82 /* WashU_ShuttleTests.swift */,
+			);
+			path = "WashU ShuttleTests";
+			sourceTree = "<group>";
+		};
+		4979014F2734C13F00F2CA82 /* WashU ShuttleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */,
+				497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */,
+			);
+			path = "WashU ShuttleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		497901312734C13D00F2CA82 /* WashU Shuttle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497901562734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU Shuttle" */;
+			buildPhases = (
+				4979012E2734C13D00F2CA82 /* Sources */,
+				4979012F2734C13D00F2CA82 /* Frameworks */,
+				497901302734C13D00F2CA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WashU Shuttle";
+			productName = "WashU Shuttle";
+			productReference = 497901322734C13D00F2CA82 /* WashU Shuttle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		497901412734C13F00F2CA82 /* WashU ShuttleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497901592734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU ShuttleTests" */;
+			buildPhases = (
+				4979013E2734C13F00F2CA82 /* Sources */,
+				4979013F2734C13F00F2CA82 /* Frameworks */,
+				497901402734C13F00F2CA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				497901442734C13F00F2CA82 /* PBXTargetDependency */,
+			);
+			name = "WashU ShuttleTests";
+			productName = "WashU ShuttleTests";
+			productReference = 497901422734C13F00F2CA82 /* WashU ShuttleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4979014B2734C13F00F2CA82 /* WashU ShuttleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4979015C2734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU ShuttleUITests" */;
+			buildPhases = (
+				497901482734C13F00F2CA82 /* Sources */,
+				497901492734C13F00F2CA82 /* Frameworks */,
+				4979014A2734C13F00F2CA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4979014E2734C13F00F2CA82 /* PBXTargetDependency */,
+			);
+			name = "WashU ShuttleUITests";
+			productName = "WashU ShuttleUITests";
+			productReference = 4979014C2734C13F00F2CA82 /* WashU ShuttleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4979012A2734C13D00F2CA82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					497901312734C13D00F2CA82 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					497901412734C13F00F2CA82 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 497901312734C13D00F2CA82;
+					};
+					4979014B2734C13F00F2CA82 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 497901312734C13D00F2CA82;
+					};
+				};
+			};
+			buildConfigurationList = 4979012D2734C13D00F2CA82 /* Build configuration list for PBXProject "WashU Shuttle" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 497901292734C13D00F2CA82;
+			productRefGroup = 497901332734C13D00F2CA82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				497901312734C13D00F2CA82 /* WashU Shuttle */,
+				497901412734C13F00F2CA82 /* WashU ShuttleTests */,
+				4979014B2734C13F00F2CA82 /* WashU ShuttleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		497901302734C13D00F2CA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4979013D2734C13F00F2CA82 /* Preview Assets.xcassets in Resources */,
+				4979013A2734C13F00F2CA82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497901402734C13F00F2CA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4979014A2734C13F00F2CA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4979012E2734C13D00F2CA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497901382734C13D00F2CA82 /* ContentView.swift in Sources */,
+				497901362734C13D00F2CA82 /* WashU_ShuttleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4979013E2734C13F00F2CA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497901472734C13F00F2CA82 /* WashU_ShuttleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497901482734C13F00F2CA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497901512734C13F00F2CA82 /* WashU_ShuttleUITests.swift in Sources */,
+				497901532734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		497901442734C13F00F2CA82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 497901312734C13D00F2CA82 /* WashU Shuttle */;
+			targetProxy = 497901432734C13F00F2CA82 /* PBXContainerItemProxy */;
+		};
+		4979014E2734C13F00F2CA82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 497901312734C13D00F2CA82 /* WashU Shuttle */;
+			targetProxy = 4979014D2734C13F00F2CA82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		497901542734C13F00F2CA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		497901552734C13F00F2CA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		497901572734C13F00F2CA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WashU Shuttle/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DSC-21.WashU-Shuttle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		497901582734C13F00F2CA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WashU Shuttle/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DSC-21.WashU-Shuttle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4979015A2734C13F00F2CA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DSC-21.WashU-ShuttleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WashU Shuttle.app/WashU Shuttle";
+			};
+			name = Debug;
+		};
+		4979015B2734C13F00F2CA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DSC-21.WashU-ShuttleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WashU Shuttle.app/WashU Shuttle";
+			};
+			name = Release;
+		};
+		4979015D2734C13F00F2CA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DSC-21.WashU-ShuttleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WashU Shuttle";
+			};
+			name = Debug;
+		};
+		4979015E2734C13F00F2CA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DSC-21.WashU-ShuttleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WashU Shuttle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4979012D2734C13D00F2CA82 /* Build configuration list for PBXProject "WashU Shuttle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497901542734C13F00F2CA82 /* Debug */,
+				497901552734C13F00F2CA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497901562734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU Shuttle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497901572734C13F00F2CA82 /* Debug */,
+				497901582734C13F00F2CA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497901592734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU ShuttleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4979015A2734C13F00F2CA82 /* Debug */,
+				4979015B2734C13F00F2CA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4979015C2734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU ShuttleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4979015D2734C13F00F2CA82 /* Debug */,
+				4979015E2734C13F00F2CA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4979012A2734C13D00F2CA82 /* Project object */;
+}
