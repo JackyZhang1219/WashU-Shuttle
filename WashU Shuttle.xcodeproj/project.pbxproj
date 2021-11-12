@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EE9FFC171156EE76F217611 /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD8D2A080775D1EEEB48B22 /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework */; };
 		497901362734C13D00F2CA82 /* WashU_ShuttleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */; };
 		497901382734C13D00F2CA82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901372734C13D00F2CA82 /* ContentView.swift */; };
 		4979013A2734C13F00F2CA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497901392734C13F00F2CA82 /* Assets.xcassets */; };
@@ -14,10 +15,9 @@
 		497901472734C13F00F2CA82 /* WashU_ShuttleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901462734C13F00F2CA82 /* WashU_ShuttleTests.swift */; };
 		497901512734C13F00F2CA82 /* WashU_ShuttleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */; };
 		497901532734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */; };
-		49DEDB7C273DEA730091E37E /* GoogleService-Info-Shuttle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49DEDB7B273DEA730091E37E /* GoogleService-Info-Shuttle.plist */; };
-		61BED1C01592D814C009BF20 /* Pods_WashU_Shuttle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CCAA93D23318B385DFFB5E /* Pods_WashU_Shuttle.framework */; };
-		75AB784FD1AF179407A907D7 /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4806013AD21D1CBE4928841A /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework */; };
-		A153A3242FD00C4D94E72817 /* Pods_WashU_ShuttleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBBEFCD4D7743B4F02C2B6 /* Pods_WashU_ShuttleTests.framework */; };
+		49DEDB7C273DEA730091E37E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49DEDB7B273DEA730091E37E /* GoogleService-Info.plist */; };
+		BE671806E4356AA62C4855BD /* Pods_WashU_ShuttleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9CA9C6E3EFF2ADA1A6DD64 /* Pods_WashU_ShuttleTests.framework */; };
+		C9ECA9A606517590D6DFFE0F /* Pods_WashU_Shuttle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC791DD15B1A373E45DA96B /* Pods_WashU_Shuttle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E4743B440FBAE1FE520A85B /* Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig"; path = "Target Support Files/Pods-WashU Shuttle-WashU ShuttleUITests/Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2DDEFC8DBF2A171C4D6F62FC /* Pods-WashU Shuttle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU Shuttle.release.xcconfig"; path = "Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle.release.xcconfig"; sourceTree = "<group>"; };
-		4806013AD21D1CBE4928841A /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WashU_Shuttle_WashU_ShuttleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		497901322734C13D00F2CA82 /* WashU Shuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WashU Shuttle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleApp.swift; sourceTree = "<group>"; };
 		497901372734C13D00F2CA82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,13 +48,16 @@
 		4979014C2734C13F00F2CA82 /* WashU ShuttleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WashU ShuttleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITests.swift; sourceTree = "<group>"; };
 		497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		49DEDB7B273DEA730091E37E /* GoogleService-Info-Shuttle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Shuttle.plist"; sourceTree = "<group>"; };
-		5E0D1A0889882C9085C8C7E7 /* Pods-WashU Shuttle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU Shuttle.debug.xcconfig"; path = "Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle.debug.xcconfig"; sourceTree = "<group>"; };
-		7987DBE2F2D20CCF3D7ADBCA /* Pods-WashU ShuttleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU ShuttleTests.debug.xcconfig"; path = "Target Support Files/Pods-WashU ShuttleTests/Pods-WashU ShuttleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A7CCAA93D23318B385DFFB5E /* Pods_WashU_Shuttle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WashU_Shuttle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9EBBEFCD4D7743B4F02C2B6 /* Pods_WashU_ShuttleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WashU_ShuttleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE2E2F8D797BCFFE4EC90415 /* Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig"; path = "Target Support Files/Pods-WashU Shuttle-WashU ShuttleUITests/Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D2098F00A0E688556E0DE9BB /* Pods-WashU ShuttleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU ShuttleTests.release.xcconfig"; path = "Target Support Files/Pods-WashU ShuttleTests/Pods-WashU ShuttleTests.release.xcconfig"; sourceTree = "<group>"; };
+		49DEDB7B273DEA730091E37E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		57992D35277224C891BD02F3 /* Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig"; path = "Target Support Files/Pods-WashU Shuttle-WashU ShuttleUITests/Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6384C6E9647878A3B1201652 /* Pods-WashU Shuttle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU Shuttle.release.xcconfig"; path = "Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle.release.xcconfig"; sourceTree = "<group>"; };
+		897A9D9F856ED52BF98B6953 /* Pods-WashU Shuttle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU Shuttle.debug.xcconfig"; path = "Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle.debug.xcconfig"; sourceTree = "<group>"; };
+		9BD8D2A080775D1EEEB48B22 /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WashU_Shuttle_WashU_ShuttleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4F38A1CAA61AE31AC2F003 /* Pods-WashU ShuttleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU ShuttleTests.release.xcconfig"; path = "Target Support Files/Pods-WashU ShuttleTests/Pods-WashU ShuttleTests.release.xcconfig"; sourceTree = "<group>"; };
+		DAC791DD15B1A373E45DA96B /* Pods_WashU_Shuttle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WashU_Shuttle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9CA9C6E3EFF2ADA1A6DD64 /* Pods_WashU_ShuttleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WashU_ShuttleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB106BE73BB0A4512EFDD8E2 /* Pods-WashU ShuttleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU ShuttleTests.debug.xcconfig"; path = "Target Support Files/Pods-WashU ShuttleTests/Pods-WashU ShuttleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC7FCDBB6EC17A645A560E12 /* Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig"; path = "Target Support Files/Pods-WashU Shuttle-WashU ShuttleUITests/Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61BED1C01592D814C009BF20 /* Pods_WashU_Shuttle.framework in Frameworks */,
+				C9ECA9A606517590D6DFFE0F /* Pods_WashU_Shuttle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A153A3242FD00C4D94E72817 /* Pods_WashU_ShuttleTests.framework in Frameworks */,
+				BE671806E4356AA62C4855BD /* Pods_WashU_ShuttleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,19 +81,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75AB784FD1AF179407A907D7 /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework in Frameworks */,
+				1EE9FFC171156EE76F217611 /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EA3AFA6F81A99F0F50EF3F0 /* Frameworks */ = {
+		2CBD65FF7C4A88E609B17CEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A7CCAA93D23318B385DFFB5E /* Pods_WashU_Shuttle.framework */,
-				4806013AD21D1CBE4928841A /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework */,
-				C9EBBEFCD4D7743B4F02C2B6 /* Pods_WashU_ShuttleTests.framework */,
+				DAC791DD15B1A373E45DA96B /* Pods_WashU_Shuttle.framework */,
+				9BD8D2A080775D1EEEB48B22 /* Pods_WashU_Shuttle_WashU_ShuttleUITests.framework */,
+				EA9CA9C6E3EFF2ADA1A6DD64 /* Pods_WashU_ShuttleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 				4979014F2734C13F00F2CA82 /* WashU ShuttleUITests */,
 				497901332734C13D00F2CA82 /* Products */,
 				CC3D2F4FB58770DAEF379D67 /* Pods */,
-				0EA3AFA6F81A99F0F50EF3F0 /* Frameworks */,
+				2CBD65FF7C4A88E609B17CEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,7 +126,7 @@
 				497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */,
 				497901372734C13D00F2CA82 /* ContentView.swift */,
 				497901392734C13F00F2CA82 /* Assets.xcassets */,
-				49DEDB7B273DEA730091E37E /* GoogleService-Info-Shuttle.plist */,
+				49DEDB7B273DEA730091E37E /* GoogleService-Info.plist */,
 				4979013B2734C13F00F2CA82 /* Preview Content */,
 			);
 			path = "WashU Shuttle";
@@ -160,12 +160,12 @@
 		CC3D2F4FB58770DAEF379D67 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D1A0889882C9085C8C7E7 /* Pods-WashU Shuttle.debug.xcconfig */,
-				2DDEFC8DBF2A171C4D6F62FC /* Pods-WashU Shuttle.release.xcconfig */,
-				CE2E2F8D797BCFFE4EC90415 /* Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig */,
-				1E4743B440FBAE1FE520A85B /* Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig */,
-				7987DBE2F2D20CCF3D7ADBCA /* Pods-WashU ShuttleTests.debug.xcconfig */,
-				D2098F00A0E688556E0DE9BB /* Pods-WashU ShuttleTests.release.xcconfig */,
+				897A9D9F856ED52BF98B6953 /* Pods-WashU Shuttle.debug.xcconfig */,
+				6384C6E9647878A3B1201652 /* Pods-WashU Shuttle.release.xcconfig */,
+				EC7FCDBB6EC17A645A560E12 /* Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig */,
+				57992D35277224C891BD02F3 /* Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig */,
+				EB106BE73BB0A4512EFDD8E2 /* Pods-WashU ShuttleTests.debug.xcconfig */,
+				AD4F38A1CAA61AE31AC2F003 /* Pods-WashU ShuttleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -177,11 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 497901562734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU Shuttle" */;
 			buildPhases = (
-				110685003BC5A6024EA195FE /* [CP] Check Pods Manifest.lock */,
+				AA6E5932D8C9D0689D8BB8FE /* [CP] Check Pods Manifest.lock */,
 				4979012E2734C13D00F2CA82 /* Sources */,
 				4979012F2734C13D00F2CA82 /* Frameworks */,
 				497901302734C13D00F2CA82 /* Resources */,
-				7D382D6B2E6651B820533070 /* [CP] Embed Pods Frameworks */,
+				CC25CD3A776E1C0F6313F4BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 497901592734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU ShuttleTests" */;
 			buildPhases = (
-				B7E1FF5338929BFE5E8FE98F /* [CP] Check Pods Manifest.lock */,
+				85C715505BF4589FCBA70B8D /* [CP] Check Pods Manifest.lock */,
 				4979013E2734C13F00F2CA82 /* Sources */,
 				4979013F2734C13F00F2CA82 /* Frameworks */,
 				497901402734C13F00F2CA82 /* Resources */,
@@ -215,11 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4979015C2734C13F00F2CA82 /* Build configuration list for PBXNativeTarget "WashU ShuttleUITests" */;
 			buildPhases = (
-				4E03DF16B6B0B31328CB1373 /* [CP] Check Pods Manifest.lock */,
+				6BDD835341DC7D1E71170110 /* [CP] Check Pods Manifest.lock */,
 				497901482734C13F00F2CA82 /* Sources */,
 				497901492734C13F00F2CA82 /* Frameworks */,
 				4979014A2734C13F00F2CA82 /* Resources */,
-				03601A05731CD37E1EDEBBCA /* [CP] Embed Pods Frameworks */,
+				3354F563060D313B254B3C4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,7 +281,7 @@
 			files = (
 				4979013D2734C13F00F2CA82 /* Preview Assets.xcassets in Resources */,
 				4979013A2734C13F00F2CA82 /* Assets.xcassets in Resources */,
-				49DEDB7C273DEA730091E37E /* GoogleService-Info-Shuttle.plist in Resources */,
+				49DEDB7C273DEA730091E37E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +302,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03601A05731CD37E1EDEBBCA /* [CP] Embed Pods Frameworks */ = {
+		3354F563060D313B254B3C4E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,29 +319,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WashU Shuttle-WashU ShuttleUITests/Pods-WashU Shuttle-WashU ShuttleUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		110685003BC5A6024EA195FE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WashU Shuttle-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4E03DF16B6B0B31328CB1373 /* [CP] Check Pods Manifest.lock */ = {
+		6BDD835341DC7D1E71170110 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,24 +341,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7D382D6B2E6651B820533070 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7E1FF5338929BFE5E8FE98F /* [CP] Check Pods Manifest.lock */ = {
+		85C715505BF4589FCBA70B8D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -400,6 +361,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA6E5932D8C9D0689D8BB8FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WashU Shuttle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC25CD3A776E1C0F6313F4BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WashU Shuttle/Pods-WashU Shuttle-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -565,7 +565,7 @@
 		};
 		497901572734C13F00F2CA82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0D1A0889882C9085C8C7E7 /* Pods-WashU Shuttle.debug.xcconfig */;
+			baseConfigurationReference = 897A9D9F856ED52BF98B6953 /* Pods-WashU Shuttle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -594,7 +594,7 @@
 		};
 		497901582734C13F00F2CA82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DDEFC8DBF2A171C4D6F62FC /* Pods-WashU Shuttle.release.xcconfig */;
+			baseConfigurationReference = 6384C6E9647878A3B1201652 /* Pods-WashU Shuttle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -623,7 +623,7 @@
 		};
 		4979015A2734C13F00F2CA82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7987DBE2F2D20CCF3D7ADBCA /* Pods-WashU ShuttleTests.debug.xcconfig */;
+			baseConfigurationReference = EB106BE73BB0A4512EFDD8E2 /* Pods-WashU ShuttleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -648,7 +648,7 @@
 		};
 		4979015B2734C13F00F2CA82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2098F00A0E688556E0DE9BB /* Pods-WashU ShuttleTests.release.xcconfig */;
+			baseConfigurationReference = AD4F38A1CAA61AE31AC2F003 /* Pods-WashU ShuttleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -673,7 +673,7 @@
 		};
 		4979015D2734C13F00F2CA82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE2E2F8D797BCFFE4EC90415 /* Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig */;
+			baseConfigurationReference = EC7FCDBB6EC17A645A560E12 /* Pods-WashU Shuttle-WashU ShuttleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -696,7 +696,7 @@
 		};
 		4979015E2734C13F00F2CA82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E4743B440FBAE1FE520A85B /* Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig */;
+			baseConfigurationReference = 57992D35277224C891BD02F3 /* Pods-WashU Shuttle-WashU ShuttleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

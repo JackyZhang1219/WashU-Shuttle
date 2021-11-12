@@ -13,7 +13,13 @@ struct WashU_ShuttleApp: App {
     
     init() {
         FirebaseApp.configure()
+        var ref: DatabaseReference!
+
+        ref = Database.database().reference()
+        ref.setValue(["working":true])
     }
+    
+    
     
     var body: some Scene {
         WindowGroup {
