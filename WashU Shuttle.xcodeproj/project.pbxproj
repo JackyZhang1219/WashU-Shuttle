@@ -14,6 +14,7 @@
 		497901472734C13F00F2CA82 /* WashU_ShuttleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901462734C13F00F2CA82 /* WashU_ShuttleTests.swift */; };
 		497901512734C13F00F2CA82 /* WashU_ShuttleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */; };
 		497901532734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */; };
+		5E9A7B4A273C8BE70057A428 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A7B49273C8BE70057A428 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4979014C2734C13F00F2CA82 /* WashU ShuttleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WashU ShuttleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITests.swift; sourceTree = "<group>"; };
 		497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E9A7B49273C8BE70057A428 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */,
 				497901372734C13D00F2CA82 /* ContentView.swift */,
+				5E9A7B49273C8BE70057A428 /* MapView.swift */,
 				497901392734C13F00F2CA82 /* Assets.xcassets */,
 				4979013B2734C13F00F2CA82 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				497901382734C13D00F2CA82 /* ContentView.swift in Sources */,
+				5E9A7B4A273C8BE70057A428 /* MapView.swift in Sources */,
 				497901362734C13D00F2CA82 /* WashU_ShuttleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
