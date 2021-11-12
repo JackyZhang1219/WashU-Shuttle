@@ -1,0 +1,6 @@
+framework module Pods_WashU_Shuttle_WashU_ShuttleUITests {
+  umbrella header "Pods-WashU Shuttle-WashU ShuttleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

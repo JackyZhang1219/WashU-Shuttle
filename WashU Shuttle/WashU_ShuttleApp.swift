@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct WashU_ShuttleApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
-}
-
-func firebase(){
-    
 }
