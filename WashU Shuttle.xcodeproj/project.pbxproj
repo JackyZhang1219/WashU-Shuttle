@@ -14,7 +14,9 @@
 		497901472734C13F00F2CA82 /* WashU_ShuttleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901462734C13F00F2CA82 /* WashU_ShuttleTests.swift */; };
 		497901512734C13F00F2CA82 /* WashU_ShuttleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */; };
 		497901532734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */; };
-		5E9A7B4A273C8BE70057A428 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A7B49273C8BE70057A428 /* MapView.swift */; };
+		5E1C58AE27434EA9007546F2 /* LBBottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 5E1C58AD27434EA9007546F2 /* LBBottomSheet */; };
+		5EF3A443273E349400300D66 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3A442273E349400300D66 /* ContentViewModel.swift */; };
+		5EF3A44B27408B7000300D66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3A44A27408B7000300D66 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,8 @@
 		4979014C2734C13F00F2CA82 /* WashU ShuttleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WashU ShuttleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITests.swift; sourceTree = "<group>"; };
 		497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5E9A7B49273C8BE70057A428 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5EF3A442273E349400300D66 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5EF3A44A27408B7000300D66 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1C58AE27434EA9007546F2 /* LBBottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */,
+				5EF3A44A27408B7000300D66 /* Main.storyboard */,
 				497901372734C13D00F2CA82 /* ContentView.swift */,
-				5E9A7B49273C8BE70057A428 /* MapView.swift */,
+				5EF3A442273E349400300D66 /* ContentViewModel.swift */,
 				497901392734C13F00F2CA82 /* Assets.xcassets */,
 				4979013B2734C13F00F2CA82 /* Preview Content */,
 			);
@@ -146,6 +151,9 @@
 			dependencies = (
 			);
 			name = "WashU Shuttle";
+			packageProductDependencies = (
+				5E1C58AD27434EA9007546F2 /* LBBottomSheet */,
+			);
 			productName = "WashU Shuttle";
 			productReference = 497901322734C13D00F2CA82 /* WashU Shuttle.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 497901292734C13D00F2CA82;
+			packageReferences = (
+				5E1C58AC27434EA9007546F2 /* XCRemoteSwiftPackageReference "LBBottomSheet" */,
+			);
 			productRefGroup = 497901332734C13D00F2CA82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF3A44B27408B7000300D66 /* Main.storyboard in Resources */,
 				4979013D2734C13F00F2CA82 /* Preview Assets.xcassets in Resources */,
 				4979013A2734C13F00F2CA82 /* Assets.xcassets in Resources */,
 			);
@@ -260,8 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF3A443273E349400300D66 /* ContentViewModel.swift in Sources */,
 				497901382734C13D00F2CA82 /* ContentView.swift in Sources */,
-				5E9A7B4A273C8BE70057A428 /* MapView.swift in Sources */,
 				497901362734C13D00F2CA82 /* WashU_ShuttleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +437,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WashU Shuttle/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,6 +466,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WashU Shuttle/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -603,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E1C58AC27434EA9007546F2 /* XCRemoteSwiftPackageReference "LBBottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LunabeeStudio/LBBottomSheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E1C58AD27434EA9007546F2 /* LBBottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E1C58AC27434EA9007546F2 /* XCRemoteSwiftPackageReference "LBBottomSheet" */;
+			productName = LBBottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4979012A2734C13D00F2CA82 /* Project object */;
 }
