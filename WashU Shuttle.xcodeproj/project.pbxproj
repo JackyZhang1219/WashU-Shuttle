@@ -15,6 +15,9 @@
 		497901512734C13F00F2CA82 /* WashU_ShuttleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */; };
 		497901532734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */; };
 		5E9A7B4A273C8BE70057A428 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A7B49273C8BE70057A428 /* MapView.swift */; };
+		BB6AF9C32745D8B7004635BC /* TestCurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AF9C22745D8B7004635BC /* TestCurrentLocation.swift */; };
+		BB6AF9C52745D932004635BC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AF9C42745D932004635BC /* LocationManager.swift */; };
+		BB6AF9C72746B933004635BC /* GetWalkingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AF9C62746B932004635BC /* GetWalkingRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITests.swift; sourceTree = "<group>"; };
 		497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E9A7B49273C8BE70057A428 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BB6AF9C22745D8B7004635BC /* TestCurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCurrentLocation.swift; sourceTree = "<group>"; };
+		BB6AF9C42745D932004635BC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BB6AF9C62746B932004635BC /* GetWalkingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWalkingRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 				497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */,
 				497901372734C13D00F2CA82 /* ContentView.swift */,
 				5E9A7B49273C8BE70057A428 /* MapView.swift */,
+				BB6AF9C42745D932004635BC /* LocationManager.swift */,
+				BB6AF9C22745D8B7004635BC /* TestCurrentLocation.swift */,
+				BB6AF9C62746B932004635BC /* GetWalkingRoute.swift */,
 				497901392734C13F00F2CA82 /* Assets.xcassets */,
 				4979013B2734C13F00F2CA82 /* Preview Content */,
 			);
@@ -262,6 +271,9 @@
 			files = (
 				497901382734C13D00F2CA82 /* ContentView.swift in Sources */,
 				5E9A7B4A273C8BE70057A428 /* MapView.swift in Sources */,
+				BB6AF9C72746B933004635BC /* GetWalkingRoute.swift in Sources */,
+				BB6AF9C52745D932004635BC /* LocationManager.swift in Sources */,
+				BB6AF9C32745D8B7004635BC /* TestCurrentLocation.swift in Sources */,
 				497901362734C13D00F2CA82 /* WashU_ShuttleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
