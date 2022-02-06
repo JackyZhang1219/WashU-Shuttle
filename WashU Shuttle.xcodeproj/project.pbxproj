@@ -15,6 +15,7 @@
 		497901512734C13F00F2CA82 /* WashU_ShuttleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */; };
 		497901532734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */; };
 		5E9A7B4A273C8BE70057A428 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A7B49273C8BE70057A428 /* MapView.swift */; };
+		BB9BFDCB27AFB8C40013E591 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BB9BFDCA27AFB8C40013E591 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITests.swift; sourceTree = "<group>"; };
 		497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E9A7B49273C8BE70057A428 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BB9BFDCA27AFB8C40013E591 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		497901292734C13D00F2CA82 = {
 			isa = PBXGroup;
 			children = (
+				BB9BFDCA27AFB8C40013E591 /* .gitignore */,
 				497901342734C13D00F2CA82 /* WashU Shuttle */,
 				497901452734C13F00F2CA82 /* WashU ShuttleTests */,
 				4979014F2734C13F00F2CA82 /* WashU ShuttleUITests */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4979013D2734C13F00F2CA82 /* Preview Assets.xcassets in Resources */,
+				BB9BFDCB27AFB8C40013E591 /* .gitignore in Resources */,
 				4979013A2734C13F00F2CA82 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
