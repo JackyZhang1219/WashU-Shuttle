@@ -5,6 +5,10 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app wants to use your location</string>
 	<key>NSExtension</key>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Will you allow this app to always know your location?</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Do you allow this app to know your current location?</string>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.location.push.service</string>

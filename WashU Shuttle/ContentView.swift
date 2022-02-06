@@ -11,16 +11,11 @@ import UIKit
 //import LBBottomSheet
 
 struct ContentView: View {
-//    @StateObject private var viewModel  = ContentViewModel()
-//
-//    @State private var offset: CGFloat = 200
-//    @State private var isInitialOffsetSet = false
-//    var walkingRouteManager = WalkingRouteManager()
-//    @StateObject var locationManager = LocationManager()
-//    @State var walkingManager = WalkingRouteManager()
-//    let start = CLLocation(latitude: 21.4765, longitude: -157.9647)
-//    let end = CLLocation(latitude: 21.4765, longitude: -157.9647)
-//
+    @StateObject private var viewModel  = ContentViewModel()
+
+    @State private var offset: CGFloat = 200
+    @State private var isInitialOffsetSet = false
+
 //    func getLocations {
 //        MKPlacemark *placemark1 = [[MKPlacemark alloc] initWithPlacemark:mapItem1.placemark];
 //
@@ -32,14 +27,13 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             //this is the map view
-//            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-//                .ignoresSafeArea(.all)
-//                //.accentColor(Color(.systemPink))
-//                .onAppear {
-//                    viewModel.checkIfLocationServicesIsEnabled()
-//                    //function to calculuate route and display overlay
-//                    walkingManager.findWalkingRoute(start,end,false,'walking,Map(coordinateRegion: $viewModel.region))
-//                }
+            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+                .ignoresSafeArea(.all)
+                //.accentColor(Color(.systemPink))
+                .onAppear {
+                    viewModel.checkIfLocationServicesIsEnabled()
+                    //function to calculuate route and display overlay
+                }
             
             //this is for the bottom sheet (slide up) view
             GeometryReader { proxy in

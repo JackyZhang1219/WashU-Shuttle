@@ -6,34 +6,41 @@
 //
 
 import UIKit
-import MapKit
+import CoreLocation
 
-class ViewController : UIViewController {
-    let locationManager = CLLocationManager()
+class ViewController : UIViewController, CLLocationManagerDelegate {
+    var locationManager:CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func determineUserLocation() {
+        locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
-        locationManager.requestLocation()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+            //locationManager.startUpdatingHeading()
+        }
     }
 }
 
-extension ViewController : CLLocationManagerDelegate {
-    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse {
-            locationManager.requestLocation()
-        }
-    }
+func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    let userLocation:CLLocation = locations[0] as CLLocation
+    
+    // Call stopUpdatingLocation() to stop listening for location updates,
+    // other wise this function will be called every time when user location changes.
+    
+   // manager.stopUpdatingLocation()
+    
+    print("user latitude = \(userLocation.coordinate.latitude)")
+    print("user longitude = \(userLocation.coordinate.longitude)")
+}
 
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            print("location:: (location)")
-        }
-    }
-
-    private func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("error:: (error)")
-    }
+func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
+{
+    print("Error \(error)")
 }
