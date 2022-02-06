@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-class GetWalkingRoute: NSObject {
+class WalkingRouteManager: NSObject {
     let request = MKDirections.Request()
     
     func findWalkingRoute (start: MKMapItem?, end: MKMapItem?, needsAlternateRoutes: Bool, transportType: MKDirectionsTransportType, routeMap: MKMapView!) {
@@ -41,12 +41,12 @@ class GetWalkingRoute: NSObject {
         
     }
 
-    func mapView(_ mapView: MKMapView, rendererFor
-            overlay: MKOverlay) -> MKOverlayRenderer {
-        let renderer = MKPolylineRenderer(overlay: overlay)
-
-        renderer.strokeColor = UIColor.blue
-        renderer.lineWidth = 5.0
-        return renderer
-    }
+//    func mapView(_ mapView: MKMapView, rendererFor
+//            overlay: MKOverlay) -> MKOverlayRenderer {
+//        let renderer = MKPolylineRenderer(overlay: overlay)
+//
+//        renderer.strokeColor = UIColor.blue
+//        renderer.lineWidth = 5.0
+//        return renderer
+//    }
 }

@@ -5,49 +5,35 @@
 //  Created by Jacky Zhang on 11/17/21.
 //
 
-import Foundation
-import CoreLocation
-import Combine
+import UIKit
+import MapKit
 
-class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+class ViewController : UIViewController {
+    let locationManager = CLLocationManager()
 
-    private let locationManager = CLLocationManager()
-    @Published var locationStatus: CLAuthorizationStatus?
-    @Published var lastLocation: CLLocation?
-
-    override init() {
-        super.init()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        locationManager.requestLocation()
     }
+}
 
-   
-    
-    var statusString: String {
-        guard let status = locationStatus else {
-            return "unknown"
-        }
-        
-        switch status {
-        case .notDetermined: return "notDetermined"
-        case .authorizedWhenInUse: return "authorizedWhenInUse"
-        case .authorizedAlways: return "authorizedAlways"
-        case .restricted: return "restricted"
-        case .denied: return "denied"
-        default: return "unknown"
+extension ViewController : CLLocationManagerDelegate {
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
         }
     }
 
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        locationStatus = status
-        print(#function, statusString)
-    }
-    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
-        lastLocation = location
-        print(#function, location)
+        if let location = locations.first {
+            print("location:: (location)")
+        }
+    }
+
+    private func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("error:: (error)")
     }
 }
