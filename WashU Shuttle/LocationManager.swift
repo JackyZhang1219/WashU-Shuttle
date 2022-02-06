@@ -6,10 +6,18 @@
 //
 
 import UIKit
+import MapKit
 import CoreLocation
 
-class LocationManager : UIViewController, CLLocationManagerDelegate {
+
+enum MapDetails {
+    static let startingLocation = CLLocationCoordinate2D(latitude: 38.64652, longitude: -90.30655)
+    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+}
+
+final class LocationManager : UIViewController, ObservableObject, CLLocationManagerDelegate{
     var locationManager:CLLocationManager!
+    @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation, span: MapDetails.defaultSpan)
 
     override func viewDidLoad() {
         super.viewDidLoad()
