@@ -11,7 +11,7 @@ import UIKit
 //import LBBottomSheet
 
 struct ContentView: View {
-    @StateObject private var viewModel  = ContentViewModel()
+    @StateObject private var userlocation  = LocationManager()
 
     @State private var offset: CGFloat = 200
     @State private var isInitialOffsetSet = false
@@ -27,12 +27,13 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             //this is the map view
-            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+            Map(coordinateRegion: $userlocation.region, showsUserLocation: true)
                 .ignoresSafeArea(.all)
                 //.accentColor(Color(.systemPink))
                 .onAppear {
-                    viewModel.checkIfLocationServicesIsEnabled()
                     //function to calculuate route and display overlay
+                    var location = userlocation.$location
+                    print(location)
                 }
             
             //this is for the bottom sheet (slide up) view
