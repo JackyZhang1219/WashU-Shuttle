@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 
-class ViewController : UIViewController, CLLocationManagerDelegate {
+class LocationManager : UIViewController, CLLocationManagerDelegate {
     var locationManager:CLLocationManager!
 
     override func viewDidLoad() {
@@ -28,6 +28,27 @@ class ViewController : UIViewController, CLLocationManagerDelegate {
     }
 }
 
+func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+
+        switch status {
+        case .notDetermined:
+            print("notDetermined")
+            manager.requestWhenInUseAuthorization()
+        case .restricted:
+            print("restricted")
+            // Inform user about the restriction
+            break
+        case .denied:
+            print("deined")
+            // The user denied the use of location services for the app or they are disabled globally in Settings.
+            // Direct them to re-enable this.
+            break
+        case .authorizedAlways, .authorizedWhenInUse:
+            print("authorized")
+            manager.requestLocation()
+        }
+    }
+
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     let userLocation:CLLocation = locations[0] as CLLocation
     
@@ -42,5 +63,5 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
 {
-    print("Error \(error)")
+    print("Error")
 }
