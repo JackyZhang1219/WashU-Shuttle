@@ -16,16 +16,6 @@ class LocationManager : UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
-    
-    func determineUserLocation() {
-        locationManager = CLLocationManager()
-        
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
-            //locationManager.startUpdatingHeading()
-        }
-    }
 }
 
 func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -45,7 +35,9 @@ func locationManager(_ manager: CLLocationManager, didChangeAuthorization status
             break
         case .authorizedAlways, .authorizedWhenInUse:
             print("authorized")
-            manager.startUpdatingLocation()
+            if(manager.locationServicesEnabled){
+                manager.startUpdatingLocation()
+            }
         }
     }
 
