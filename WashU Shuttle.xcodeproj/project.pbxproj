@@ -43,14 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		497901322734C13D00F2CA82 /* WashU Shuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "WashU Shuttle.app"; path = "/Users/jackyzhang/Desktop/WashU-Shuttle/build/Debug-iphoneos/WashU Shuttle.app"; sourceTree = "<absolute>"; };
 		497901352734C13D00F2CA82 /* WashU_ShuttleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleApp.swift; sourceTree = "<group>"; };
 		497901372734C13D00F2CA82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		497901392734C13F00F2CA82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4979013C2734C13F00F2CA82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		497901422734C13F00F2CA82 /* WashU ShuttleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "WashU ShuttleTests.xctest"; path = "/Users/jackyzhang/Desktop/WashU-Shuttle/build/Debug-iphoneos/WashU ShuttleTests.xctest"; sourceTree = "<absolute>"; };
 		497901462734C13F00F2CA82 /* WashU_ShuttleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleTests.swift; sourceTree = "<group>"; };
-		4979014C2734C13F00F2CA82 /* WashU ShuttleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "WashU ShuttleUITests.xctest"; path = "/Users/jackyzhang/Desktop/WashU-Shuttle/build/Debug-iphoneos/WashU ShuttleUITests.xctest"; sourceTree = "<absolute>"; };
 		497901502734C13F00F2CA82 /* WashU_ShuttleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITests.swift; sourceTree = "<group>"; };
 		497901522734C13F00F2CA82 /* WashU_ShuttleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashU_ShuttleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E9A7B49273C8BE70057A428 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -59,9 +56,12 @@
 		BB6AF9C42745D932004635BC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BB8B023227589F1C00412AF9 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		BB8B02362758A9BF00412AF9 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
-		BB8B023C275986C400412AF9 /* UserLocation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; name = UserLocation.appex; path = "/Users/jackyzhang/Desktop/WashU-Shuttle/build/Debug-iphoneos/UserLocation.appex"; sourceTree = "<absolute>"; };
 		BB9BFDC227AF405A0013E591 /* WashU-Shuttle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WashU-Shuttle-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BB9BFDC427AF405B0013E591 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BB9BFDCC27AFB94B0013E591 /* WashU Shuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WashU Shuttle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9BFDCD27AFB94B0013E591 /* WashU ShuttleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WashU ShuttleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9BFDCE27AFB94B0013E591 /* WashU ShuttleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WashU ShuttleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9BFDCF27AFB94B0013E591 /* UserLocation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UserLocation.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA187352746EB1B00AAB85A /* WalkingRouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingRouteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +106,10 @@
 				497901452734C13F00F2CA82 /* WashU ShuttleTests */,
 				4979014F2734C13F00F2CA82 /* WashU ShuttleUITests */,
 				BB9BFDC327AF405B0013E591 /* Frameworks */,
+				BB9BFDCC27AFB94B0013E591 /* WashU Shuttle.app */,
+				BB9BFDCD27AFB94B0013E591 /* WashU ShuttleTests.xctest */,
+				BB9BFDCE27AFB94B0013E591 /* WashU ShuttleUITests.xctest */,
+				BB9BFDCF27AFB94B0013E591 /* UserLocation.appex */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,7 +185,7 @@
 				5E1C58AD27434EA9007546F2 /* LBBottomSheet */,
 			);
 			productName = "WashU Shuttle";
-			productReference = 497901322734C13D00F2CA82 /* WashU Shuttle.app */;
+			productReference = BB9BFDCC27AFB94B0013E591 /* WashU Shuttle.app */;
 			productType = "com.apple.product-type.application";
 		};
 		497901412734C13F00F2CA82 /* WashU ShuttleTests */ = {
@@ -199,7 +203,7 @@
 			);
 			name = "WashU ShuttleTests";
 			productName = "WashU ShuttleTests";
-			productReference = 497901422734C13F00F2CA82 /* WashU ShuttleTests.xctest */;
+			productReference = BB9BFDCD27AFB94B0013E591 /* WashU ShuttleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4979014B2734C13F00F2CA82 /* WashU ShuttleUITests */ = {
@@ -217,7 +221,7 @@
 			);
 			name = "WashU ShuttleUITests";
 			productName = "WashU ShuttleUITests";
-			productReference = 4979014C2734C13F00F2CA82 /* WashU ShuttleUITests.xctest */;
+			productReference = BB9BFDCE27AFB94B0013E591 /* WashU ShuttleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		BB8B023B275986C400412AF9 /* UserLocation */ = {
@@ -234,7 +238,7 @@
 			);
 			name = UserLocation;
 			productName = UserLocation;
-			productReference = BB8B023C275986C400412AF9 /* UserLocation.appex */;
+			productReference = BB9BFDCF27AFB94B0013E591 /* UserLocation.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -428,6 +432,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "WashU-Shuttle-Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "WashU-Shuttle-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -483,6 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "WashU-Shuttle-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -506,6 +513,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "WashU-Shuttle-Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "WashU-Shuttle-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to find the optimal paths.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -566,6 +574,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD2V3SD538;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -590,6 +599,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD2V3SD538;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -613,6 +623,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD2V3SD538;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -635,6 +646,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD2V3SD538;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,6 +668,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD2V3SD538;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UserLocation/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UserLocation;
@@ -680,6 +693,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD2V3SD538;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UserLocation/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UserLocation;

@@ -8,11 +8,11 @@
 import Foundation
 import MapKit
 
-class WalkingRouteManager: NSObject {
+class WalkingRouteManager: NSObject, ObservableObject {
     let request = MKDirections.Request()
     
     func findWalkingRoute (start: MKMapItem?, end: MKMapItem?, needsAlternateRoutes: Bool, transportType: MKDirectionsTransportType, routeMap: MKMapView!) {
-        request.source = start
+        request.source = MKMapItem.forCurrentLocation()
         request.destination = end
         request.requestsAlternateRoutes = needsAlternateRoutes
         request.transportType = transportType

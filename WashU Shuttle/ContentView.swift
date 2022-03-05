@@ -11,7 +11,8 @@ import UIKit
 //import LBBottomSheet
 
 struct ContentView: View {
-    @StateObject private var userlocation  = LocationManager()
+    @ObservedObject var userlocation  = LocationManager()
+    @ObservedObject var walkingroute = WalkingRouteManager()
 
     @State private var offset: CGFloat = 200
     @State private var isInitialOffsetSet = false
@@ -24,6 +25,10 @@ struct ContentView: View {
 //        NSLog(@"placemark1.name is - %@", placemark1.name)
 //    }
     
+    init() {
+            self.userlocation.startUpdating()
+        }
+    
     var body: some View {
         ZStack {
             //this is the map view
@@ -31,9 +36,20 @@ struct ContentView: View {
                 .ignoresSafeArea(.all)
                 //.accentColor(Color(.systemPink))
                 .onAppear {
-                    //function to calculuate route and display overlay
-                    var location = userlocation.$location
-                    print(location)
+                    var lat: String {
+                        return "\(userlocation.lastKnownLocation?.coordinate.latitude ?? 0.0)"
+                    }
+                    
+                    var lon: String {
+                            return "\(userlocation.lastKnownLocation?.coordinate.longitude ?? 0.0)"
+                    }
+//                    //function to calculuate route and display overlay
+////                    var location = $userlocation.location
+////                    var myLatitude: String = String(format: "%f", location.coordinate.latitude)
+////                    var myLongitude: String = String(format:"%f", location.coordinate.longitude)
+//                    walkingroute.findWalkingRoute(start: <#T##MKMapItem?#>, end: <#T##MKMapItem?#>, needsAlternateRoutes: false, transportType: <#T##MKDirectionsTransportType#>, routeMap: <#T##MKMapView!#>)
+//                    print(lat)
+//                    print(lon)
                 }
             
             //this is for the bottom sheet (slide up) view
