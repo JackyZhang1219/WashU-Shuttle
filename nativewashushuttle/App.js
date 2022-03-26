@@ -3,8 +3,10 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, {Component} from 'react'
 //import MapScreen from './components/MapScreen'
 import Pathfind from './components/Pathfind'
+import Search from './components/Search'
 import * as Location from 'expo-location'
-import MapView, {Marker} from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
+import MapView, {Marker} from 'react-native-maps'; 
+
 
 
 export default class App extends Component {
@@ -66,7 +68,7 @@ export default class App extends Component {
             <Pathfind />
 
         </MapView>
-        
+        <Search/>
         <StatusBar style="auto" />
       </View>
     )
