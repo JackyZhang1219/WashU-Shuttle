@@ -5,9 +5,10 @@ import MapScreen from './components/MapScreen'
 import Search from './components/Search'
 import * as Location from 'expo-location'
 
+
+
 export default class App extends Component {
 
-  
   render(){
     return (
       //touchablewithoutfeedback lets you dismiss keyboard in one tap
@@ -15,8 +16,10 @@ export default class App extends Component {
         <View style={styles.container}>
           <MapScreen/>
           <Search/>
+          
           <StatusBar style="auto" />
         </View>
+       
       </TouchableWithoutFeedback>
     )
   }

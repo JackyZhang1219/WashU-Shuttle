@@ -2,6 +2,7 @@ import React, {Component, useState, useEffect} from 'react'
 import { render } from 'react-dom';
 import { SearchBar } from 'react-native-elements';
 import { StyleSheet, Text, View } from 'react-native'
+import KeyboardSpacer from 'react-native-keyboard-spacer'
 
 class Search extends Component{
     state = {
@@ -19,6 +20,7 @@ class Search extends Component{
                 placeholder="Type Here to Search..." 
                 />   
                 {/* onChange={this.updateSearch} value={String(this.state)} */}
+                <KeyboardSpacer/> 
             </View>
         );
     }
@@ -27,7 +29,6 @@ class Search extends Component{
 const styles = StyleSheet.create({
     view: {
       width: "100%",
-      marginBottom: 20,
     },
 });
     
