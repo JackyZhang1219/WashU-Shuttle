@@ -28,6 +28,10 @@ class MapScreen extends Component{
       latitude: location.coords.latitude,
       longitude: location.coords.longitude,
     });
+    this.context.setUserLocation({
+      latitude: location.coords.latitude,
+      longitude: location.coords.longitude,
+    })
   }
   
   async componentDidMount(){
