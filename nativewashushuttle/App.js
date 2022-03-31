@@ -16,7 +16,7 @@ export default function App() {
     latitude:38.647445,
     longitude:-90.309686
   })
-  //render(){
+  
     return (
       //touchablewithoutfeedback lets you dismiss keyboard in one tap
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
@@ -29,8 +29,6 @@ export default function App() {
         </View>
       </TouchableWithoutFeedback>
     )
- // }
-
 }
 
 

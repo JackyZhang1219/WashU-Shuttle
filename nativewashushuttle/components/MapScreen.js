@@ -48,7 +48,6 @@ class MapScreen extends Component{
   }
   
   render(){
-    console.log(this.context.searchRegion.latitude)
     return (
       <MapView
             style = {styles.map}

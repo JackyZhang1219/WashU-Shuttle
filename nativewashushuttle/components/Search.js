@@ -6,6 +6,8 @@ import KeyboardSpacer from 'react-native-keyboard-spacer'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import MapView, {Marker} from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
 import { AppContext } from '../context';
+import { REACT_APP_API_KEY} from '@env';
+
 
 export default function Search() {
     const {setRegion} = useContext(AppContext)
@@ -27,7 +29,7 @@ export default function Search() {
                 
             }}
             query={{
-                key: 'AIzaSyDwnDBPA4aCWGq--vp65dFn5ECwZlqS6Uk',
+                key: REACT_APP_API_KEY,
                 language: 'en',
                 components: "country:us",
                 types: "establishment",
