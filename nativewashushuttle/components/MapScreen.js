@@ -1,11 +1,13 @@
 import MapView, {Marker} from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
 import { StyleSheet, Text, View, Platform } from 'react-native';
-
-import React, {Component, useState, useEffect} from 'react'
+import React, {Component, useState, useEffect,useContext} from 'react'
 import * as Location from 'expo-location'
 import Pathfind from './Pathfind'
+import Search from './Search'
+import { AppContext } from '../context';
 
 class MapScreen extends Component{
+  static contextType = AppContext
 
   constructor(props){
     super(props)
@@ -27,7 +29,7 @@ class MapScreen extends Component{
       longitude: location.coords.longitude,
     });
   }
-
+  
   async componentDidMount(){
     try {
       let { status } =  await Location.requestForegroundPermissionsAsync();
@@ -40,9 +42,9 @@ class MapScreen extends Component{
       console.log(error);
     }
   }
-
-
+  
   render(){
+    console.log(this.context.searchRegion.latitude)
     return (
       <MapView
             style = {styles.map}
@@ -61,6 +63,8 @@ class MapScreen extends Component{
             title={"Mallinckrodt"}
             />
             <Pathfind/>
+            <Marker coordinate={{latitude: this.context.searchRegion.latitude, longitude: this.context.searchRegion.longitude}} pinColor = {"purple"}/>
+            
       </MapView>
     );
   }
@@ -78,6 +82,6 @@ class MapScreen extends Component{
     ...StyleSheet.absoluteFillObject,
   },
 });
-
- export default MapScreen
+MapScreen.contextType = AppContext;
+export default MapScreen
 
