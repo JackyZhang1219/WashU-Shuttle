@@ -12,12 +12,16 @@ export default function App() {
     latitude:38.647445,
     longitude:-90.309686
   })
+  const [userLocation, setUserLocation] = React.useState({
+    latitude:38.647445,
+    longitude:-90.309686
+  })
   //render(){
     return (
       //touchablewithoutfeedback lets you dismiss keyboard in one tap
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
         <View style={styles.container}>
-          <AppContext.Provider value={{searchRegion,setRegion }}>
+          <AppContext.Provider value={{searchRegion,setRegion,userLocation,setUserLocation}}>
             <Search/>
             <MapScreen/>
             <StatusBar style="auto" />
