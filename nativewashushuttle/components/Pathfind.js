@@ -11,7 +11,6 @@ const url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origi
 
 export default function Pathfind () {
 
-
     const [coordinates] = useState([
         {
           latitude: 38.65903643882779,
@@ -21,10 +20,9 @@ export default function Pathfind () {
           latitude: 38.647445,
           longitude: -90.309686,
         },
-      ]);
+    ]);
 
     return (
-       
         <MapViewDirections
           origin={coordinates[0]}
           destination={coordinates[1]}
@@ -32,7 +30,6 @@ export default function Pathfind () {
           strokeWidth={4}
           strokeColor="#6666ff"
         />
-       
     );
  }
 
