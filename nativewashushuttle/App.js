@@ -6,8 +6,12 @@ import Search from './components/Search'
 import * as Location from 'expo-location'
 import KeyboardSpacer from 'react-native-keyboard-spacer'
 import { AppContext } from './context';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
+
   const [searchRegion, setRegion] = React.useState({
     latitude:38.647445,
     longitude:-90.309686
@@ -16,7 +20,7 @@ export default function App() {
     latitude:38.647445,
     longitude:-90.309686
   })
-  
+
     return (
       //touchablewithoutfeedback lets you dismiss keyboard in one tap
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
@@ -44,4 +48,3 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
   },
 });
-
