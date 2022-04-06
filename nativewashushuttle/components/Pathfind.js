@@ -9,13 +9,13 @@ import { REACT_APP_API_KEY} from '@env';
 const mode = 'driving'; // 'walking';
 
 export default function Pathfind () {
-    const {searchRegion} = useContext(AppContext)
-    const {userLocation} = useContext(AppContext)
+    const {getDest} = useContext(AppContext)
+    const {getStart} = useContext(AppContext)
 
     return (
         <MapViewDirections
-          origin={`${userLocation.latitude}, ${userLocation.longitude}`}
-          destination={ `${searchRegion.latitude}, ${searchRegion.longitude}`}
+          origin={`${getStart.latitude}, ${getStart.longitude}`}
+          destination={ `${getDest.latitude}, ${getDest.longitude}`}
           apikey={REACT_APP_API_KEY} // insert your API Key here
           strokeWidth={4}
           strokeColor="#6666ff"
