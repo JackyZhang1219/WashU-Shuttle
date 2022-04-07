@@ -13,6 +13,8 @@ import { REACT_APP_API_KEY} from '@env';
 export default function Searchbar() {
     const {getStart} = useContext(AppContext)
     const {setStart} = useContext(AppContext)
+    const {searchStyle} = useContext(AppContext)
+    const {setSearchStyle} = useContext(AppContext)
 
     return (
         <GooglePlacesAutocomplete
@@ -37,7 +39,7 @@ export default function Searchbar() {
                 location: `${getStart.latitude}, ${getStart.longitude}`
             }}
             styles={{
-                textInputContainer: {flex:0,backgroundColor: 'black',width:"100%",marginBottom:"-40%",padding:"2%"},
+                textInputContainer: {padding:"2%",marginTop:6},
                 listView: {backgroundColor: "white"}
             }}
             

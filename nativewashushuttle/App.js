@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View,ScrollView,TextInput,TouchableWithoutFeedback,Keyboard } from 'react-native'
+import { StyleSheet, Text, View,ScrollView,TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native'
 import React, {Component,useState,useCallback,useMemo,useRef} from 'react'
 import MapScreen from './components/MapScreen'
 import * as Location from 'expo-location'
@@ -26,29 +26,34 @@ export default function App() {
     latitude:38.647445,
     longitude:-90.309686
   })
+  const [getRef,setRef] = React.useState({
+    ref: useRef(null)
+  })
 
- 
+  const [searchStyle, setSearchStyle] = useState(true);
 
     return (
       //touchablewithoutfeedback lets you dismiss keyboard in one tap
+     
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
         <View style={styles.container}>
-          <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest}}>
+          <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
        
             <MapScreen/>
             <SearchModal/>
-            <KeyboardSpacer/>
+            {/* <KeyboardSpacer/> */}
             
             <StatusBar style="auto" />
           </AppContext.Provider>
         </View>
       </TouchableWithoutFeedback>
+     
     )
 }
 
 
 const styles = StyleSheet.create({
   container: {
-    flex:1
+    flex:1,
   },
 });

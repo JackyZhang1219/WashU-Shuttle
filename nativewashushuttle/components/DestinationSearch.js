@@ -13,6 +13,8 @@ import { REACT_APP_API_KEY} from '@env';
 export default function DestinationSearch() {
     const {getDest} = useContext(AppContext)
     const {setDest} = useContext(AppContext)
+    const {searchStyle} = useContext(AppContext)
+    const {setSearchStyle} = useContext(AppContext)
 
     return (
         <GooglePlacesAutocomplete
@@ -37,7 +39,7 @@ export default function DestinationSearch() {
                 location: `${getDest.latitude}, ${getDest.longitude}`
             }}
             styles={{
-                textInputContainer: {flex:0,backgroundColor: 'black',width:"100%",marginBottom:"-40%",padding:"2%"},
+                textInputContainer: {padding:"2%"},
                 listView: {backgroundColor: "white"}
             }}
             
