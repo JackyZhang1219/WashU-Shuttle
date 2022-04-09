@@ -39,12 +39,11 @@ export default function DestinationSearch() {
                 location: `${getDest.latitude}, ${getDest.longitude}`
             }}
             styles={{
-                textInputContainer: {padding:"2%"},
+                textInputContainer: {padding:"2%",flex:1},
                 listView: {backgroundColor: "white"}
             }}
-            
+
         />
-       
+
     );
 };
-

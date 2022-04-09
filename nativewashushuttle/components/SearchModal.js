@@ -33,21 +33,21 @@ export default function SearchModal(){
         snapPoints={snapPoints}
         initialSnapIndex={0}
         enabled={true}
-        onChange={handleSheetChanges} 
+        onChange={handleSheetChanges}
         keyboardBehavior={'fillParent'}
       >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
           <View style={styles.searching}>
             <Searchbar/>
-            <DestinationSearch/> 
+            <DestinationSearch/>
           </View>
           </TouchableWithoutFeedback>
 
           <View style={styles.options}>
             <Button title="Close" onPress={()=>sheetRef.current.collapse()}/>
           </View>
-      
-        
+
+
       </BottomSheet>
   
     )
@@ -85,6 +85,3 @@ const styles = StyleSheet.create({
     paddingTop:20
   }
 })
-
-    
-

@@ -1,16 +1,13 @@
-import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View,ScrollView,TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native'
+import { StyleSheet, Text, View,ScrollView,TextInput,TouchableWithoutFeedback } from 'react-native'
 import React, {Component,useState,useCallback,useMemo,useRef} from 'react'
 import MapScreen from './components/MapScreen'
 import * as Location from 'expo-location'
-import KeyboardSpacer from 'react-native-keyboard-spacer'
 import { AppContext } from './context';
-// import { NavigationContainer } from '@react-navigation/native';
-// import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import SearchModal from './components/SearchModal'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 export default function App() {
-  // const Stack = createNativeStackNavigator();
+  const Stack = createNativeStackNavigator();
 
   const [userLocation, setUserLocation] = React.useState({
     latitude:38.647445,
@@ -29,20 +26,16 @@ export default function App() {
   })
   const [searchStyle, setSearchStyle] = useState(true);
 
-    return (     
-        <View style={styles.container}>
-          <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
-            <MapScreen/>
-            <SearchModal/>
-            <StatusBar style="auto" />
-          </AppContext.Provider>
-        </View>
-    )
-}
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-  },
-});
+  return (
+    <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen
+              name="home"
+              component={MapScreen}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+    </AppContext.Provider>
+  )
+};
