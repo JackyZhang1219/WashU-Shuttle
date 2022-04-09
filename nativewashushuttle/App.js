@@ -8,8 +8,6 @@ import { AppContext } from './context';
 // import { NavigationContainer } from '@react-navigation/native';
 // import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import SearchModal from './components/SearchModal'
-import Searchbar from './components/Searchbar'
-import BottomSheet from '@gorhom/bottom-sheet'
 
 export default function App() {
   // const Stack = createNativeStackNavigator();
@@ -29,25 +27,16 @@ export default function App() {
   const [getRef,setRef] = React.useState({
     ref: useRef(null)
   })
-
   const [searchStyle, setSearchStyle] = useState(true);
 
-    return (
-      //touchablewithoutfeedback lets you dismiss keyboard in one tap
-     
-      <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+    return (     
         <View style={styles.container}>
           <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
-       
             <MapScreen/>
             <SearchModal/>
-            {/* <KeyboardSpacer/> */}
-            
             <StatusBar style="auto" />
           </AppContext.Provider>
         </View>
-      </TouchableWithoutFeedback>
-     
     )
 }
 

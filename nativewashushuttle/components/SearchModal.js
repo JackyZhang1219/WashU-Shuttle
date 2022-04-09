@@ -38,17 +38,18 @@ export default function SearchModal(){
         onChange={handleSheetChanges} 
         keyboardBehavior={'fillParent'}
       >
-        {/* <TouchableWithoutFeedback onPress={() => setSearchStyle(!searchStyle)}> */}
+        <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
           {/* <View style={searchStyle ? styles.notSearching : styles.searching}> */}
           <View style={styles.searching}>
             <Searchbar/>
             <DestinationSearch/> 
           </View>
+          </TouchableWithoutFeedback>
 
           <View style={styles.options}>
             <Button title="Close" onPress={()=>sheetRef.current.collapse()}/>
           </View>
-        {/* </TouchableWithoutFeedback> */}
+      
         
       </BottomSheet>
     )
