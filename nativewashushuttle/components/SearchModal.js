@@ -1,11 +1,9 @@
 import React, { useCallback, useMemo, useRef,useContext,useEffect } from 'react';
-import { View, StyleSheet,Text,Button, Dimensions, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { View, StyleSheet,Text,Button, Dimensions,Keyboard, Platform,TouchableWithoutFeedback } from 'react-native';
 import BottomSheet, {BottomSheetTextInput, BottomSheetView, SCREEN_HEIGHT, useBottomSheetDynamicSnapPoints} from '@gorhom/bottom-sheet';
 import "react-native-gesture-handler"
-import {
-  BottomSheetModal,
-  BottomSheetModalProvider,
-} from '@gorhom/bottom-sheet';
+
+
 import Searchbar from './Searchbar'
 import DestinationSearch from './DestinationSearch'
 import KeyboardSpacer from 'react-native-keyboard-spacer'
@@ -39,7 +37,6 @@ export default function SearchModal(){
         keyboardBehavior={'fillParent'}
       >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-          {/* <View style={searchStyle ? styles.notSearching : styles.searching}> */}
           <View style={styles.searching}>
             <Searchbar/>
             <DestinationSearch/>
@@ -52,24 +49,30 @@ export default function SearchModal(){
 
 
       </BottomSheet>
+  
     )
 }
 
 
 const styles = StyleSheet.create({
-  notSearching: {
-    height:"30%",
-    justifyContent: 'center',
-    backgroundColor: 'grey',
-    width:"100%",
-    borderRadius:4
-  },
   searching: {
-    height:"50%",
-    justifyContent: 'center',
-    backgroundColor: '#bfbfbf',
-    width:"100%",
-    borderRadius:10,
+    ...Platform.select({
+      ios:{
+        height:"40%",
+        justifyContent: 'center',
+        backgroundColor: '#bfbfbf',
+        width:"100%",
+        borderRadius:10,
+      },
+      android:{
+        height:"80%",
+        justifyContent: 'center',
+        backgroundColor: '#bfbfbf',
+        width:"100%",
+        borderRadius:10,
+      }
+    })
+    
   },
   options:{
     backgroundColor:'#bfbfbf',
