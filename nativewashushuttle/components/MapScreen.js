@@ -1,12 +1,13 @@
 import MapView, {Marker} from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
-import { StyleSheet, Text, View, Platform } from 'react-native';
+import { StyleSheet, Text, View, Platform, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import React, {Component, useState, useEffect,useContext} from 'react'
 import * as Location from 'expo-location'
+import KeyboardSpacer from 'react-native-keyboard-spacer'
 import Pathfind from './Pathfind'
 import { AppContext } from '../context';
 
 class MapScreen extends Component{
-  static contextType = AppContext
+  static contextType = AppContext;
 
   constructor(props){
     super(props)
@@ -31,7 +32,7 @@ class MapScreen extends Component{
       longitude: location.coords.longitude,
     })
   }
-  
+
   async componentDidMount(){
     try {
       let { status } =  await Location.requestForegroundPermissionsAsync();
@@ -44,28 +45,34 @@ class MapScreen extends Component{
       console.log(error);
     }
   }
-  
+
   render(){
     return (
-      <MapView
-            style = {styles.map}
-            region={{
-            latitude: this.state.latitude,
-            longitude: this.state.longitude,
-            latitudeDelta: 0.015,
-            longitudeDelta: 0.0121,
-            }}>
-
-            <Pathfind/>
-            <Marker coordinate={{latitude: this.context.getStart.latitude, longitude: this.context.getStart.longitude}} pinColor = {"blue"} title={"Start Location"}/>
-            <Marker coordinate={{latitude: this.context.getDest.latitude, longitude: this.context.getDest.longitude}} pinColor = {"green"} title = {"Destination"}/>
-
-            
-      </MapView>
+      <View>
+        <View style={styles.container}>
+            <Search/>
+            <MapView
+              style = {styles.map}
+              region={{
+              latitude: this.state.latitude,
+              longitude: this.state.longitude,
+              latitudeDelta: 0.015,
+              longitudeDelta: 0.0121,
+              }}>
+              <Marker coordinate={this.state} pinColor = {"lightblue"} // any color
+              title={"Current Location"}
+              />
+              <Marker coordinate={{latitude: 38.647445,longitude: -90.309686}} pinColor = {"red"} // any color
+              title={"Mallinckrodt"}
+              />
+              <Pathfind/>
+              <Marker coordinate={{latitude: this.context.searchRegion.latitude, longitude: this.context.searchRegion.longitude}} pinColor = {"purple"}/>
+            </MapView>
+        </View>
+      </View>
     );
   }
  }
-
 
  const styles = StyleSheet.create({
   container: {
@@ -77,6 +84,7 @@ class MapScreen extends Component{
     flex:1
   },
 });
-MapScreen.contextType = AppContext;
-export default MapScreen
 
+MapScreen.contextType = AppContext;
+
+export default MapScreen

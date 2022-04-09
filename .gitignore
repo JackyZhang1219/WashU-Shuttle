@@ -78,3 +78,5 @@ web-build/
 dist/
 
 # @end expo-cli
+nativewashushuttle/env
+nativewashushuttle/package-lock.json

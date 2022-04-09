@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Platform } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions'
 import React, {Component, useState, useEffect, useContext} from 'react'
 import { AppContext } from '../context';
-import { REACT_APP_API_KEY} from '@env';
+import { REACT_APP_API_KEY } from '@env';
 
 
 const mode = 'driving'; // 'walking';
@@ -22,4 +22,3 @@ export default function Pathfind () {
         />
     );
  }
-
