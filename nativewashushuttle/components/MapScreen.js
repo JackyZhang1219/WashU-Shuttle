@@ -59,7 +59,6 @@ class MapScreen extends Component{
           latitudeDelta: 0.015,
           longitudeDelta: 0.0121,
           }}>
-
           <Pathfind/>
           <Marker coordinate={{latitude: this.context.getStart.latitude, longitude: this.context.getStart.longitude}} pinColor = {"blue"} title={"Start Location"}/>
           <Marker coordinate={{latitude: this.context.getDest.latitude, longitude: this.context.getDest.longitude}} pinColor = {"green"} title = {"Destination"}/>
