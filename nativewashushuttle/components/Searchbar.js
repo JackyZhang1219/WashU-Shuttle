@@ -1,3 +1,4 @@
+import { REACT_APP_API_KEY} from '@env';
 import React, {Component, useState, useEffect, useContext} from 'react'
 import { render } from 'react-dom';
 import { SearchBar } from 'react-native-elements';
@@ -6,7 +7,6 @@ import KeyboardSpacer from 'react-native-keyboard-spacer'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import MapView, {Marker} from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
 import { AppContext } from '../context';
-import { REACT_APP_API_KEY} from '@env';
 // import { subscribeToPermissionUpdates } from 'react-native-location';
 
 
@@ -39,12 +39,11 @@ export default function Searchbar() {
                 location: `${getStart.latitude}, ${getStart.longitude}`
             }}
             styles={{
-                textInputContainer: {padding:"2%",marginTop:6},
+                textInputContainer: {padding:"2%",marginTop:6,flex:1},
                 listView: {backgroundColor: "white"}
             }}
-            
+
         />
-       
+
     );
 };
-

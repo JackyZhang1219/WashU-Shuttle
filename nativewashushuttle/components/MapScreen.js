@@ -7,6 +7,7 @@ import Pathfind from './Pathfind'
 import { AppContext } from '../context';
 import SearchModal from './SearchModal'
 import { StatusBar } from 'expo-status-bar'
+import { REACT_APP_API_KEY} from '@env';
 
 class MapScreen extends Component{
   static contextType = AppContext;
@@ -73,8 +74,6 @@ class MapScreen extends Component{
  const styles = StyleSheet.create({
   container: {
     flex:1,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
   },
   map: {
     flex:1
