@@ -80,3 +80,7 @@ dist/
 # @end expo-cli
 nativewashushuttle/env
 nativewashushuttle/package-lock.json
+*.lock
+*.lock
+*.lock
+*.lock

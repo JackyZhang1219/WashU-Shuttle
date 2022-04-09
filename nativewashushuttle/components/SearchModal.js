@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo, useRef,useContext,useEffect } from 'react';
-import { View, StyleSheet,Text,Button, Dimensions,TouchableWithoutFeedback,Keyboard } from 'react-native';
+import { View, StyleSheet,Text,Button, Dimensions, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import BottomSheet, {BottomSheetTextInput, BottomSheetView, SCREEN_HEIGHT, useBottomSheetDynamicSnapPoints} from '@gorhom/bottom-sheet';
 import "react-native-gesture-handler"
 import {
@@ -29,28 +29,28 @@ export default function SearchModal(){
     }, []);
 
     return (
-      
+
       <BottomSheet
         ref={sheetRef}
         snapPoints={snapPoints}
         initialSnapIndex={0}
         enabled={true}
-        onChange={handleSheetChanges} 
+        onChange={handleSheetChanges}
         keyboardBehavior={'fillParent'}
       >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
           {/* <View style={searchStyle ? styles.notSearching : styles.searching}> */}
           <View style={styles.searching}>
             <Searchbar/>
-            <DestinationSearch/> 
+            <DestinationSearch/>
           </View>
           </TouchableWithoutFeedback>
 
           <View style={styles.options}>
             <Button title="Close" onPress={()=>sheetRef.current.collapse()}/>
           </View>
-      
-        
+
+
       </BottomSheet>
     )
 }
@@ -82,6 +82,3 @@ const styles = StyleSheet.create({
     paddingTop:20
   }
 })
-
-    
-

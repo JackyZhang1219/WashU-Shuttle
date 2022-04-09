@@ -26,19 +26,16 @@ export default function App() {
   })
   const [searchStyle, setSearchStyle] = useState(true);
 
-    return (
-      <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
-        // <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-          <NavigationContainer>
-            <Stack.Navigator>
-              <Stack.Screen
-                name="home"
-                component={MapScreen}
-              />
-            </Stack.Navigator>
-          </NavigationContainer>
-        // </TouchableWithoutFeedback>
-      </AppContext.Provider>
-    )
-}
-});
+  return (
+    <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen
+              name="home"
+              component={MapScreen}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+    </AppContext.Provider>
+  )
+};

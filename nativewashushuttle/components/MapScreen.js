@@ -5,7 +5,7 @@ import * as Location from 'expo-location'
 import KeyboardSpacer from 'react-native-keyboard-spacer'
 import Pathfind from './Pathfind'
 import { AppContext } from '../context';
-import SearchModal from './components/SearchModal'
+import SearchModal from './SearchModal'
 import { StatusBar } from 'expo-status-bar'
 
 class MapScreen extends Component{
@@ -51,25 +51,21 @@ class MapScreen extends Component{
   render(){
     return (
       <View style={styles.container}>
-          <MapView
-            style = {styles.map}
-            region={{
-            latitude: this.state.latitude,
-            longitude: this.state.longitude,
-            latitudeDelta: 0.015,
-            longitudeDelta: 0.0121,
-            }}>
-            <Marker coordinate={this.state} pinColor = {"lightblue"} // any color
-            title={"Current Location"}
-            />
-            <Marker coordinate={{latitude: 38.647445,longitude: -90.309686}} pinColor = {"red"} // any color
-            title={"Mallinckrodt"}
-            />
-            <Pathfind/>
-            <Marker coordinate={{latitude: this.context.searchRegion.latitude, longitude: this.context.searchRegion.longitude}} pinColor = {"purple"}/>
-          </MapView>
-          <SearchModal/>
-          <StatusBar style="auto" />
+        <MapView
+          style = {styles.map}
+          region={{
+          latitude: this.state.latitude,
+          longitude: this.state.longitude,
+          latitudeDelta: 0.015,
+          longitudeDelta: 0.0121,
+          }}>
+
+          <Pathfind/>
+          <Marker coordinate={{latitude: this.context.getStart.latitude, longitude: this.context.getStart.longitude}} pinColor = {"blue"} title={"Start Location"}/>
+          <Marker coordinate={{latitude: this.context.getDest.latitude, longitude: this.context.getDest.longitude}} pinColor = {"green"} title = {"Destination"}/>
+        </MapView>
+        <SearchModal/>
+        <StatusBar style="auto" />
       </View>
     );
   }
