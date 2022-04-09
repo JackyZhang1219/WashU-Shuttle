@@ -7,26 +7,28 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 import MapView, {Marker} from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
 import { AppContext } from '../context';
 import { REACT_APP_API_KEY} from '@env';
+// import { subscribeToPermissionUpdates } from 'react-native-location';
 
 
-export default function Search() {
-    const {setRegion} = useContext(AppContext)
-    const {searchRegion} = useContext(AppContext)
+export default function Searchbar() {
+    const {getStart} = useContext(AppContext)
+    const {setStart} = useContext(AppContext)
+    const {searchStyle} = useContext(AppContext)
+    const {setSearchStyle} = useContext(AppContext)
 
     return (
         <GooglePlacesAutocomplete
-            placeholder='Search'
+            placeholder='Current Location'
             fetchDetails={true}
             GooglePlacesSearchQuery={{
                 rankby: "distance"
             }}
             onPress={(data, details = null) => {
             // 'details' is provided when fetchDetails = true
-                setRegion({
+                setStart({
                     latitude: details.geometry.location.lat,
                     longitude: details.geometry.location.lng
                 })
-                
             }}
             query={{
                 key: REACT_APP_API_KEY,
@@ -34,10 +36,10 @@ export default function Search() {
                 components: "country:us",
                 types: "establishment",
                 radius: 30000,
-                location: `${searchRegion.latitude}, ${searchRegion.longitude}`
+                location: `${getStart.latitude}, ${getStart.longitude}`
             }}
             styles={{
-                container: {flex:0,width:"100%",height:"94%",padding:"4%",zIndex:1},
+                textInputContainer: {padding:"2%",marginTop:6},
                 listView: {backgroundColor: "white"}
             }}
             

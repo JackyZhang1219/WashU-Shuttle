@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Platform } from 'react-native';
 import React, {Component, useState, useEffect,useContext} from 'react'
 import * as Location from 'expo-location'
 import Pathfind from './Pathfind'
-import Search from './Search'
 import { AppContext } from '../context';
 
 class MapScreen extends Component{
@@ -23,12 +22,11 @@ class MapScreen extends Component{
   }
 
   updateState(location) {
-    this.setState({
-      ...this.state,
+    this.context.setUserLocation({
       latitude: location.coords.latitude,
       longitude: location.coords.longitude,
-    });
-    this.context.setUserLocation({
+    })
+    this.context.setStart({
       latitude: location.coords.latitude,
       longitude: location.coords.longitude,
     })
@@ -58,15 +56,10 @@ class MapScreen extends Component{
             longitudeDelta: 0.0121,
             }}>
 
-            <Marker coordinate={this.state} pinColor = {"lightblue"} // any color
-            title={"Current Location"}
-            />
-
-            <Marker coordinate={{latitude: 38.647445,longitude: -90.309686}} pinColor = {"red"} // any color
-            title={"Mallinckrodt"}
-            />
             <Pathfind/>
-            <Marker coordinate={{latitude: this.context.searchRegion.latitude, longitude: this.context.searchRegion.longitude}} pinColor = {"purple"}/>
+            <Marker coordinate={{latitude: this.context.getStart.latitude, longitude: this.context.getStart.longitude}} pinColor = {"blue"} title={"Start Location"}/>
+            <Marker coordinate={{latitude: this.context.getDest.latitude, longitude: this.context.getDest.longitude}} pinColor = {"green"} title = {"Destination"}/>
+
             
       </MapView>
     );
@@ -76,13 +69,12 @@ class MapScreen extends Component{
 
  const styles = StyleSheet.create({
   container: {
-    ...StyleSheet.absoluteFillObject,
-    height: "100%",
+    flex:1,
     justifyContent: 'flex-end',
     alignItems: 'center',
   },
   map: {
-    ...StyleSheet.absoluteFillObject,
+    flex:1
   },
 });
 MapScreen.contextType = AppContext;
