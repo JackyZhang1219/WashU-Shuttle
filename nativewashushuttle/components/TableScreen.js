@@ -1,20 +1,16 @@
 import React from 'react';
-import { StyleSheet,ScrollView } from 'react-native';
+import { StyleSheet,ScrollView,Text,Button,View } from 'react-native';
 import { DataTable } from 'react-native-paper';
 import database from '../totalSchedule.json'
 
 export default function TableScreen(){
   
   const circulator = database.shuttleRoutes.circulator.weekday;
-  let rowIndex = 0
-  let colIndex = 0
   let keyMaker = 0
   let TimeTable = [];
   let x = 0;
 
  
-
-  
   function generateRows(x){
     for(let j = 0; j < 5; j++){
       keyMaker++
@@ -57,7 +53,19 @@ export default function TableScreen(){
   }
 
     return(
+     
             <DataTable style={styles.container}>
+                <View style={{flexDirection:'row',flexWrap: 'wrap'}}>
+               <Button title='Circulator'></Button>
+               <Button title='Debaliviere'></Button>
+               <Button title='Delmar-Loop'></Button>
+               <Button title='Lewis-Colaborative'></Button>
+               <Button title='Skinker-Debaliever'></Button>
+               <Button title='South-Campus'></Button>
+               <Button title='West-Campus'></Button>
+               </View>
+               
+              <Text style={{textAlign:'center',fontWeight:'bold'}}>CIRCULATOR(WEEKDAY)</Text>
               <DataTable.Header style={styles.tableHeader}>
                 {getHeader()}
               </DataTable.Header> 
