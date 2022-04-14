@@ -5,22 +5,32 @@ import database from '../totalSchedule.json'
 
 export default function TableScreen(){
   
-  const circulator = database.shuttleRoutes.circulator.weekday;
+  //const circulator = database.shuttleRoutes.circulator.weekday;
+  let shuttleRoute = database.shuttleRoutes.circulator.weekday
   let keyMaker = 0
   let TimeTable = [];
   let x = 0;
+  let numStops = 0
+  let currentRouteName = ""
 
+  function setShuttleRoute(loc,num){
+      console.log(loc)
+      currentRouteName = loc
+      shuttleRoute = database.shuttleRoutes.loc.weekday
+      numStops = num
+  }
  
+  //need to update so it takes in mind numStops
   function generateRows(x){
     for(let j = 0; j < 5; j++){
       keyMaker++
       return(
-        <DataTable.Row>
+        <DataTable.Row key = {keyMaker+40}>
           <DataTable.Cell key = {keyMaker}>{getVals()[j][x]}</DataTable.Cell>
-          <DataTable.Cell key = {keyMaker}>{getVals()[j+1][x]}</DataTable.Cell>
-          <DataTable.Cell key = {keyMaker}>{getVals()[j+2][x]}</DataTable.Cell>
-          <DataTable.Cell key = {keyMaker}>{getVals()[j+3][x]}</DataTable.Cell>
-          <DataTable.Cell key = {keyMaker}>{getVals()[j+4][x]}</DataTable.Cell>
+          <DataTable.Cell key = {keyMaker+1}>{getVals()[j+1][x]}</DataTable.Cell>
+          <DataTable.Cell key = {keyMaker+2}>{getVals()[j+2][x]}</DataTable.Cell>
+          <DataTable.Cell key = {keyMaker+3}>{getVals()[j+3][x]}</DataTable.Cell>
+          <DataTable.Cell key = {keyMaker+4}>{getVals()[j+4][x]}</DataTable.Cell>
         </DataTable.Row>
       )
     }
@@ -39,10 +49,10 @@ export default function TableScreen(){
 
 
   function getKeys(){
-    return Object.keys(circulator);
+    return Object.keys(shuttleRoute);
   }
   function getVals(){
-    return Object.values(circulator)
+    return Object.values(shuttleRoute)
   }
 
   function getHeader(){
@@ -55,17 +65,17 @@ export default function TableScreen(){
     return(
      
             <DataTable style={styles.container}>
-                <View style={{flexDirection:'row',flexWrap: 'wrap'}}>
-               <Button title='Circulator'></Button>
-               <Button title='Debaliviere'></Button>
-               <Button title='Delmar-Loop'></Button>
-               <Button title='Lewis-Colaborative'></Button>
-               <Button title='Skinker-Debaliever'></Button>
-               <Button title='South-Campus'></Button>
-               <Button title='West-Campus'></Button>
-               </View>
+              <View style={{flexDirection:'row',flexWrap: 'wrap'}}>
+                <Button title='Circulator' onPress={setShuttleRoute('circulator',5)}></Button>
+                <Button title='Debaliviere' onPress={setShuttleRoute('debaliviere',6)}></Button>
+                <Button title='Delmar-Loop' onPress={setShuttleRoute('delmarloop',6)}></Button>
+                <Button title='Lewis-Collaborative' onPress={setShuttleRoute('lewiscollab',8)}></Button>
+                <Button title='Skinker-Debaliever' onPress={setShuttleRoute('skinker-debaliviere',7)}></Button>
+                <Button title='South-Campus' onPress={setShuttleRoute('south-campus',6)}></Button>
+                <Button title='West-Campus' onPress={setShuttleRoute('west-campus',4)}></Button>
+              </View>
                
-              <Text style={{textAlign:'center',fontWeight:'bold'}}>CIRCULATOR(WEEKDAY)</Text>
+              <Text style={{textAlign:'center',fontWeight:'bold'}}>{currentRouteName}</Text>
               <DataTable.Header style={styles.tableHeader}>
                 {getHeader()}
               </DataTable.Header> 
