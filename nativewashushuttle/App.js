@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View,ScrollView,TextInput,TouchableWithoutFeedback } from 'react-native'
 import React, {Component,useState,useCallback,useMemo,useRef} from 'react'
 import MapScreen from './components/MapScreen'
+import TableScreen from './components/TableScreen'
 import * as Location from 'expo-location'
 import { AppContext } from './context';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Tab from './components/Tab'
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -28,14 +30,11 @@ export default function App() {
 
   return (
     <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen
-              name="home"
-              component={MapScreen}
-            />
-          </Stack.Navigator>
-        </NavigationContainer>
+        <NavigationContainer/>
+          {newFunction()}
+          <Stack.Navigator/>
+          
+       
     </AppContext.Provider>
   )
-};
+  }
