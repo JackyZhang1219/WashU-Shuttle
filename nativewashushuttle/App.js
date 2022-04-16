@@ -7,6 +7,7 @@ import { AppContext } from './context';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Tab from './components/Tab'
+import TabBar from './components/Tab'
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -31,7 +32,7 @@ export default function App() {
   return (
     <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
         <NavigationContainer/>
-          {newFunction()}
+          <TabBar/>
           <Stack.Navigator/>
           
        
