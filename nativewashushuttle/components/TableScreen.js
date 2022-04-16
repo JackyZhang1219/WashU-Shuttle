@@ -38,7 +38,6 @@ export default function TableScreen(){
     return Object.values(shuttleRoute)
   }
  
-  //need to update so it takes in mind numStops
   function generateRows(x){
     let stopCount = Array.from({length: numStops}, (v, i) => i) 
     for(let j = 0; j < numStops; j++){
