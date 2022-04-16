@@ -1,13 +1,12 @@
-import { StyleSheet, Text, View,ScrollView,TextInput,TouchableWithoutFeedback } from 'react-native'
+import { StyleSheet, Text, View,ScrollView,TextInput,TouchableWithoutFeedback,SafeAreaView  } from 'react-native'
 import React, {Component,useState,useCallback,useMemo,useRef} from 'react'
 import MapScreen from './components/MapScreen'
-import * as Location from 'expo-location'
+import TableScreen from './components/TableScreen'
 import { AppContext } from './context';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import TabView from './components/Tab'
 
 export default function App() {
-  const Stack = createNativeStackNavigator();
 
   const [userLocation, setUserLocation] = React.useState({
     latitude:38.647445,
@@ -28,14 +27,9 @@ export default function App() {
 
   return (
     <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen
-              name="home"
-              component={MapScreen}
-            />
-          </Stack.Navigator>
-        </NavigationContainer>
+       <SafeAreaView style={{flex:1}}>
+        <TabView/>
+       </SafeAreaView>
     </AppContext.Provider>
   )
-};
+}
