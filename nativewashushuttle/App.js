@@ -4,7 +4,7 @@ import MapScreen from './components/MapScreen'
 import TableScreen from './components/TableScreen'
 import { AppContext } from './context';
 import { NavigationContainer } from '@react-navigation/native';
-import TabView from './components/Tab'
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 export default function App() {
 
@@ -24,11 +24,19 @@ export default function App() {
     ref: useRef(null)
   })
   const [searchStyle, setSearchStyle] = useState(true);
+  const Tab = createMaterialTopTabNavigator();
 
   return (
     <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
        <SafeAreaView style={{flex:1}}>
-        <TabView/>
+
+        <NavigationContainer>
+          <Tab.Navigator>
+            <Tab.Screen name="Map" component={MapScreen} />
+            <Tab.Screen name="Table" component={TableScreen} />
+          </Tab.Navigator>
+        </NavigationContainer>
+
        </SafeAreaView>
     </AppContext.Provider>
   )
