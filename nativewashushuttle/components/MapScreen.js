@@ -1,5 +1,5 @@
 import MapView, {Marker} from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
-import { StyleSheet, Text, View, Platform, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { StyleSheet, Text, View, Platform, TouchableWithoutFeedback, Keyboard, Systrace, Image } from 'react-native';
 import React, {Component, useState, useEffect,useContext} from 'react'
 import * as Location from 'expo-location'
 import KeyboardSpacer from 'react-native-keyboard-spacer'
@@ -8,9 +8,14 @@ import { AppContext } from '../context';
 import SearchModal from './SearchModal'
 import { StatusBar } from 'expo-status-bar'
 import { REACT_APP_API_KEY} from '@env';
+import database from '../totalSchedule.json'
+import {LewisStops,CircStops,DelmarStops,DebalStops,SkinkerDebalStops,SouthStops,WestStops} from './RenderStops'
+import Render from 'react-native-web/dist/cjs/exports/render';
+
 
 class MapScreen extends Component{
   static contextType = AppContext;
+  
 
   constructor(props){
     super(props)
@@ -50,6 +55,7 @@ class MapScreen extends Component{
   }
 
   render(){
+    let stops = database.locations
     return (
       <View style={styles.container}>
         <MapView
@@ -61,8 +67,21 @@ class MapScreen extends Component{
           longitudeDelta: 0.0121,
           }}>
           <Pathfind/>
-          <Marker coordinate={{latitude: this.context.getStart.latitude, longitude: this.context.getStart.longitude}} pinColor = {"blue"} title={"Start Location"}/>
-          <Marker coordinate={{latitude: this.context.getDest.latitude, longitude: this.context.getDest.longitude}} pinColor = {"green"} title = {"Destination"}/>
+          <Marker coordinate={{latitude: this.context.getStart.latitude, longitude: this.context.getStart.longitude}} pinColor = {"blue"} title={"Start Location"}>
+            <Image source={require('../assets/currentloc.png')} style = {{height: 30, width:30}}/>
+          </Marker>
+          <Marker coordinate={{latitude: this.context.getDest.latitude, longitude: this.context.getDest.longitude}} pinColor = {"green"} title = {"Destination"}>
+            <Image source={require('../assets/flag.png')} style = {{height:30,width:30}}/>
+          </Marker>
+
+          <LewisStops/> 
+          <CircStops/>
+          <DelmarStops/>
+          <DebalStops/>
+          <SkinkerDebalStops/>
+          <SouthStops/>
+          <WestStops/>
+
         </MapView>
         <SearchModal/>
         <StatusBar style="auto" />

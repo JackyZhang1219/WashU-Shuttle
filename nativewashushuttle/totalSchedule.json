@@ -135,7 +135,7 @@
         },
         "mall":{
             "numStops": 1,
-            "location" : [38.64699,90.30899],
+            "location" : [[38.64699,90.30899]],
             "name" : "Mallinckrodt Center"
         },
         "mill":{
@@ -181,48 +181,48 @@
 
         },
         "ucity":{
-
+            "location":[38.656658,-90.308645]
         },
         "lewis":{
-
+            "location":[38.657585981757016,-90.30842054666903]
         },
-        "c&syr":{
-
+        "c_syr":{
+            "location":[38.65920969306612,-90.30745172890647]
         },
-        "c&lel":{
-
+        "c_lel":{
+            "location":[38.65902454203262,-90.30570809804166]
         },
-        "c&int":{
-
+        "c_int":{
+            "location":[38.65848877097532,-90.3028768714725]
         },
-        "c&east":{
-
+        "c_east":{
+            "location":[38.65739693115222,-90.3009515159173]
         },
-        "skink&f":{
-
+        "skink_f":{
+            "location":[38.655075,-90.299826]
         },
-        "westmin&skink":{
+        "westmin_skink":{
 
         },
         "westmin":{
 
         },
-        "des&wash":{
+        "des_wash":{
 
         },
-        "king&des":{
+        "king_des":{
 
         },
-        "des&forest":{
+        "des_forest":{
 
         },
-        "rose&s":{
+        "rose_s":{
 
         },
         "801skink":{
 
         },
-        "demun&clay":{
+        "demun_clay":{
 
         },
         "southCampus":{
@@ -237,7 +237,7 @@
         "goldfarb":{
 
         },
-        "asbur&for":{
+        "asbur_for":{
 
         }
     }

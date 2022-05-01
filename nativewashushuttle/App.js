@@ -23,11 +23,15 @@ export default function App() {
   const [getRef,setRef] = React.useState({
     ref: useRef(null)
   })
+  const [stops,setStops] = React.useState({
+    x:[],
+    y:[]
+  })
   const [searchStyle, setSearchStyle] = useState(true);
   const Tab = createMaterialTopTabNavigator();
 
   return (
-    <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef}}>
+    <AppContext.Provider value={{userLocation,setUserLocation,getStart,setStart,getDest,setDest,searchStyle,setSearchStyle,getRef,setRef,stops,setStops}}>
        <SafeAreaView style={{flex:1}}>
 
         <NavigationContainer>
