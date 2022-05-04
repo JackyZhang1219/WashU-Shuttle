@@ -19,25 +19,28 @@ let westimg = require('../assets/westcamp.png')
 export function LewisStops () {
     return(
     <View>
-        <Marker coordinate={{latitude:stops.ucity.location[0],longitude:stops.ucity.location[1]}} pinColor = {"orange"} title = {"lewis stop"} >
+        <Marker coordinate={{latitude:stops.ucity.location[0],longitude:stops.ucity.location[1]}} pinColor = {"orange"} title = {"ucitygrill"} >
             <Image source={lewisimg} style = {{height: 14, width:14}}/>
         </Marker>
-          <Marker coordinate={{latitude:stops.lewis.location[0],longitude:stops.lewis.location[1]}} pinColor = {"orange"} title = {"lewis stop"} >
+          <Marker coordinate={{latitude:stops.lewis.location[0],longitude:stops.lewis.location[1]}} pinColor = {"orange"} title = {"lewis"} >
             <Image source={lewisimg} style = {{height: 14, width:14}}/>
           </Marker>
-          <Marker coordinate={{latitude:stops.c_syr.location[0],longitude:stops.c_syr.location[1]}} pinColor = {"orange"} title = {"lewis stop"}>
+          <Marker coordinate={{latitude:stops.c_syr.location[0],longitude:stops.c_syr.location[1]}} pinColor = {"orange"} title = {"syracuse"}>
             <Image source={lewisimg} style = {{height: 14, width:14}}/>
           </Marker>
-          <Marker coordinate={{latitude:stops.c_lel.location[0],longitude:stops.c_lel.location[1]}} pinColor = {"orange"} title = {"lewis stop"}>
+          <Marker coordinate={{latitude:stops.c_lel.location[0],longitude:stops.c_lel.location[1]}} pinColor = {"orange"} title = {"leland"}>
             <Image source={lewisimg} style = {{height: 14, width:14}}/>
           </Marker>
-          <Marker coordinate={{latitude:stops.c_int.location[0],longitude:stops.c_east.location[1]}} pinColor = {"orange"} title = {"lewis stop"}>
+          <Marker coordinate={{latitude:stops.c_int.location[0],longitude:stops.c_east.location[1]}} pinColor = {"orange"} title = {"interdrive"}>
             <Image source={lewisimg} style = {{height: 14, width:14}}/>
           </Marker>
-          <Marker coordinate={{latitude:stops.c_east.location[0],longitude:stops.c_east.location[1]}} pinColor = {"orange"} title = {"lewis stop"}>
+          <Marker coordinate={{latitude:stops.c_east.location[0],longitude:stops.c_east.location[1]}} pinColor = {"orange"} title = {"eastgate"}>
             <Image source={lewisimg} style = {{height: 14, width:14}}/>
           </Marker>
-          <Marker coordinate={{latitude:stops.skink_f.location[0],longitude:stops.skink_f.location[1]}} pinColor = {"orange"} title = {"lewis stop"}>
+          <Marker coordinate={{latitude:stops.skink_del.location[0],longitude:stops.skink_del.location[1]}} pinColor = {"orange"} title = {"skinkerdelmar"}>
+            <Image source={lewisimg} style = {{height: 14, width:14}}/>
+          </Marker>
+          <Marker coordinate={{latitude:stops.mall.location[0],longitude:stops.mall.location[1]}} pinColor = {"orange"} title = {"mall"}>
             <Image source={lewisimg} style = {{height: 14, width:14}}/>
           </Marker>
     </View>
@@ -47,28 +50,22 @@ export function LewisStops () {
 export function CircStops () {
     return(
     <View>
-        <Marker coordinate={{latitude: 38.64697739485534, longitude:-90.30968497214381}} pinColor = {"orange"} title = {"lewis stop"} >
+        <Marker coordinate={{latitude:stops.clkTower.location[0][0],longitude:stops.clkTower.location[0][1]}} pinColor = {"orange"} title = {"clocktower"} >
             <Image source={circ_img} style = {{height: 14, width:14}}/>
         </Marker>
-        <Marker coordinate={{latitude: 38.6503532667649, longitude:-90.31383603586775}} pinColor = {"orange"} title = {"lewis stop"} >
+        <Marker coordinate={{latitude:stops.mall.location[0],longitude:stops.mall.location[1]}} pinColor = {"orange"} title = {"mall"} >
             <Image source={circ_img} style = {{height: 14, width:14}}/>
         </Marker>
-        <Marker coordinate={{latitude:38.650121266446384,longitude:-90.31176355962523}} pinColor = {"orange"} title = {"lewis stop"}>
+        <Marker coordinate={{latitude:stops.mill.location[0][0],longitude:stops.mill.location[0][1]}} pinColor = {"orange"} title = {"mill"} >
             <Image source={circ_img} style = {{height: 14, width:14}}/>
         </Marker>
-        <Marker coordinate={{latitude:38.64762194947298,longitude:-90.3041174349984}} pinColor = {"orange"} title = {"lewis stop"}>
+        <Marker coordinate={{latitude:stops.skink.location[0][0],longitude:stops.skink.location[0][1]}} pinColor = {"orange"} title = {"forest&skink"}>
             <Image source={circ_img} style = {{height: 14, width:14}}/>
         </Marker>
-        <Marker coordinate={{latitude:38.648820260502795,longitude:-90.30095806194079}} pinColor = {"orange"} title = {"lewis stop"}>
+        <Marker coordinate={{latitude:stops.danfGarage.location[0][0],longitude:stops.danfGarage.location[0][1]}} pinColor = {"orange"} title = {"danfG"}>
             <Image source={circ_img} style = {{height: 14, width:14}}/>
         </Marker>
-        <Marker coordinate={{latitude:38.64548946476101,longitude:-90.31492504372376}} pinColor = {"orange"} title = {"lewis stop"}>
-            <Image source={circ_img} style = {{height: 14, width:14}}/>
-        </Marker>
-        <Marker coordinate={{latitude:38.64528584841182,longitude: -90.31279191323324}} pinColor = {"orange"} title = {"lewis stop"}>
-            <Image source={circ_img} style = {{height: 14, width:14}}/>
-        </Marker>
-        <Marker coordinate={{latitude:38.6467735750624,longitude: -90.30601192354213}} pinColor = {"orange"} title = {"lewis stop"}>
+        <Marker coordinate={{latitude:stops.mall.location[0],longitude:stops.mall.location[1]}} pinColor = {"orange"} title = {"mall"}>
             <Image source={circ_img} style = {{height: 14, width:14}}/>
         </Marker>
     </View>
@@ -78,19 +75,19 @@ export function CircStops () {
 export function DelmarStops () {
     return(
         <View>
-            <Marker coordinate={{latitude: 38.64529190329377, longitude:-90.31285192698242}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude:stops.mall.location[0],longitude:stops.mall.location[1]}} title = {"mall"} >
                 <Image source={delmarimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude: 38.64696777813261, longitude:-90.30953978463096}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude:stops.enr.location[0],longitude:stops.enr.location[1]}} title = {"enright"}>
                 <Image source={delmarimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.65533126163502,longitude:-90.31090282176775}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude:stops.mehv.location[0],longitude:stops.mehv.location[1]}} title = {"mehlville&washington"}>
                 <Image source={delmarimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.65475507949964,longitude:-90.30537980243288}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude:stops.trinity.location[0],longitude:stops.trinity.location[1]}} title = {"trinitymusic"}>
                 <Image source={delmarimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.656510686348746,longitude:-90.30182646422426}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude:stops.clkTower.location[1][0],longitude:stops.clkTower.location[1][1]}} title = {"clocktower"} >
                 <Image source={delmarimg} style = {{height: 14, width:14}}/>
             </Marker>
         </View>
@@ -100,22 +97,22 @@ export function DelmarStops () {
 export function DebalStops () {
     return(
         <View>
-            <Marker coordinate={{latitude: 38.646930132793678, longitude:-90.309102067034061}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude:stops.mall.location[0], longitude:stops.mall.location[1]}} title = {"mall"} >
                 <Image source={debalimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude: 38.648563273488101, longitude:-90.285007586535755}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude:stops.debal.location[0],longitude:stops.debal.location[1]}} title = {"debal"} >
                 <Image source={debalimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.648635528816435,longitude:-90.28283106382375}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude:stops.persh.location[0],longitude:stops.persh.location[1]}} title = {"persh"}>
                 <Image source={debalimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.649351347942734,longitude:38.649351347942734}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude:stops.water.location[0],longitude:stops.water.location[1]}} title = {"waterman"}>
                 <Image source={debalimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.648526704504796,longitude:-90.278186992993767}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude:stops.belt.location[0],longitude:stops.belt.location[1]}} title = {"belt"}>
                 <Image source={debalimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.648264178870875,longitude:-90.280540388595327}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude:stops.clara.location[0],longitude:stops.clara.location[1]}} title = {"clara"}>
                 <Image source={debalimg} style = {{height: 14, width:14}}/>
             </Marker>
         </View>
@@ -123,21 +120,22 @@ export function DebalStops () {
 }
 
 export function SkinkerDebalStops () {
+    //these stop names may be incorrect, will fix later
     return(
         <View>
-            <Marker coordinate={{latitude: 38.646942313841627, longitude:-90.30924293005711}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude: stops.mall.location[0], longitude: stops.mall.location[1]}} title = {"mall"} >
                 <Image source={sdimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude: 38.648755973845795, longitude:-90.300966895074964}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude: stops.skink_f.location[0], longitude: stops.skink_f.location[1]}} title = {"skink f"} >
                 <Image source={sdimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.652876828896616,longitude:-90.300034459081417}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.westmin_skink.location[0], longitude: stops.westmin_skink.location[1]}} title = {"westmin skink"}>
                 <Image source={sdimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.653935963132511,longitude:-90.294318289384051}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.des_wash.location[0],longitude: stops.des_wash.location[1]}} title = {"des wash"}>
                 <Image source={sdimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.65050821151101,longitude:-90.29444711677894}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.des_forest.location[0],longitude: stops.des_forest.location[1]}} title = {"des forest"}>
                 <Image source={sdimg} style = {{height: 14, width:14}}/>
             </Marker>
         </View>
@@ -147,22 +145,22 @@ export function SkinkerDebalStops () {
 export function SouthStops () {
     return(
         <View>
-            <Marker coordinate={{latitude: 38.646999870352722, longitude:-90.309945150301232}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude: stops.mall.location[0], longitude:stops.mall.location[1]}} title = {"mall"} >
                 <Image source={southimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude: 38.637223478490938, longitude:-90.303691361364201}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude: stops.rose_s.location[0], longitude: stops.rose_s.location[1]}} title = {"rose s"} >
                 <Image source={southimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.635490632460538,longitude:-90.303961460515623}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.eighthundredone.location[0],longitude:stops.eighthundredone.location[1]}} title = {"801s"}>
                 <Image source={southimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.634358579794622,longitude: -90.313393721591538}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.demun_clay.location[0] ,longitude: stops.demun_clay.location[1]}} title = {"demun clay"}>
                 <Image source={southimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.63470040990012,longitude:-90.316415693733191}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.southCampus.location[0],longitude: stops.southCampus.location[1]}} title = {"south campus"}>
                 <Image source={southimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.633977970359048,longitude:-90.309480831792129}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.concordia.location[0], longitude: stops.concordia.location[1]}} title = {"concordia"}>
                 <Image source={southimg} style = {{height: 14, width:14}}/>
             </Marker>
         </View>
@@ -172,16 +170,16 @@ export function SouthStops () {
 export function WestStops () {
     return(
         <View>
-            <Marker coordinate={{latitude: 38.64970272079538, longitude:-90.33050444933946}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude: stops.westCampus.location[0], longitude:stops.westCampus.location[1]}} title = {"west campus"} >
                 <Image source={westimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude: 38.648045623212425, longitude:-90.32124888149002}} title = {"lewis stop"} >
+            <Marker coordinate={{latitude: stops.mall.location[0],longitude: stops.mall.location[1]}} title = {"mall"}>
                 <Image source={westimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.647032050959034,longitude:-90.31020489008081}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.goldfarb.location[0],longitude: stops.goldfarb.location[1]}} title = {"goldfarb"}>
                 <Image source={westimg} style = {{height: 14, width:14}}/>
             </Marker>
-            <Marker coordinate={{latitude:38.646763032208064,longitude: -90.30586771878619}} title = {"lewis stop"}>
+            <Marker coordinate={{latitude: stops.asbur_for.location[0], longitude: stops.asbur_for.location[1]}} title = {"asbur"} >
                 <Image source={westimg} style = {{height: 14, width:14}}/>
             </Marker>
         </View>
